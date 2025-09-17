@@ -62,6 +62,20 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        "brand-green": {
+          DEFAULT: "#6B8E23", // Um verde oliva suave
+          50: "#F0F4E6",
+          100: "#E0E9D2",
+          200: "#C1D3A6",
+          300: "#A2BD7A",
+          400: "#83A74E",
+          500: "#6B8E23",
+          600: "#5A771F",
+          700: "#49601A",
+          800: "#384915",
+          900: "#273210",
+          950: "#1B220B",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
