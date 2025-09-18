@@ -3,7 +3,7 @@ import { Instagram, Facebook, MapPin, Mail, Phone } from "lucide-react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-footer-background text-gray-300 py-12"> {/* Alterado bg-background para bg-footer-background */}
+    <footer className="bg-footer-background text-gray-300 py-12">
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Logo/Branding */}
         <div className="col-span-full md:col-span-1 text-center md:text-left mb-6 md:mb-0">
@@ -87,7 +87,20 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <div className="mt-12 border-t border-gray-700 pt-8 text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} Ana Pais Arquitetura. Todos os direitos reservados.
+        <p className="mb-2">
+          Desenvolvido por{" "}
+          <a
+            href="https://wa.me/5531993305095"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-brand-color transition-colors underline"
+          >
+            Yesterday Agência - (31) 99330-5095
+          </a>
+        </p>
+        <p>
+          © {new Date().getFullYear()} Ana Pais Arquitetura. Todos os direitos reservados.
+        </p>
       </div>
     </footer>
   );
