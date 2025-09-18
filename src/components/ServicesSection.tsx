@@ -14,13 +14,13 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   description,
 }) => (
   <Card className="flex flex-col items-center text-center p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border-none">
-    <CardHeader className="pb-4">
+    <CardHeader className="pb-4 flex flex-col items-center"> {/* Adicionado flex flex-col items-center aqui */}
       <Icon className="h-12 w-12 text-brand-color mb-4" />
       <CardTitle className="text-xl font-semibold text-gray-800">
         {title}
       </CardTitle>
     </CardHeader>
-    <CardContent>
+    <CardContent className="text-center"> {/* Adicionado text-center aqui para garantir */}
       <p className="text-gray-600">{description}</p>
     </CardContent>
   </Card>
