@@ -6,7 +6,7 @@ const AboutSection: React.FC = () => {
       <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="lg:order-2">
           <img
-            src="https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=1968&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="/sobre.png" // Caminho atualizado para a imagem que você adicionou
             alt="Ana Pais Arquitetura"
             className="rounded-lg shadow-xl w-full h-auto object-cover"
           />
