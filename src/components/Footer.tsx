@@ -3,7 +3,7 @@ import { Instagram, Facebook, MapPin, Mail, Phone } from "lucide-react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-12">
+    <footer className="bg-black text-gray-300 py-12"> {/* Alterado bg-gray-900 para bg-black */}
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Logo/Branding */}
         <div className="col-span-full md:col-span-1 text-center md:text-left mb-6 md:mb-0">
