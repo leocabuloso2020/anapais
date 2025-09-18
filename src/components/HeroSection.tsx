@@ -21,7 +21,7 @@ const HeroSection: React.FC = () => {
         <div className="mb-8 animate-fade-in-up"> 
           <Logo />
         </div>
-        <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight mb-4 animate-fade-in-up">
+        <h1 className="text-4xl md:text-6xl font-medium text-foreground leading-tight mb-4 animate-fade-in-up"> {/* Alterado de font-bold para font-medium */}
           Ame sua casa. Transforme seu ambiente em um refúgio.
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground mb-8 animate-fade-in-up delay-100">
