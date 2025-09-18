@@ -16,7 +16,7 @@ const Index: React.FC = () => {
     <div className="min-h-screen flex flex-col">
       <header className="w-full bg-white shadow-sm py-4 px-6 flex justify-between items-center sticky top-0 z-50">
         <div className="text-2xl font-bold text-gray-900">
-          Ana Pais <span className="text-brand-color">Arquitetura</span> {/* O texto original volta aqui */}
+          {/* Removido o texto "Ana Pais Arquitetura" */}
         </div>
         <nav className="hidden md:block">
           <ul className="flex space-x-6">
