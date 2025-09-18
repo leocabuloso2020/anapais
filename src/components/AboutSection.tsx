@@ -5,7 +5,7 @@ const AboutSection: React.FC = () => {
     <section className="py-16 bg-background">
       <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="lg:order-2 flex justify-center">
-          <div className="relative w-full max-w-md h-[450px] rounded-lg shadow-xl overflow-hidden"> {/* Diminuído para h-[450px] */}
+          <div className="relative w-full max-w-md h-[400px] rounded-lg shadow-xl overflow-hidden"> {/* Diminuído para h-[400px] */}
             <img
               src="/sobre.png" // Caminho atualizado para a imagem que você adicionou
               alt="Ana Pais Arquitetura"
