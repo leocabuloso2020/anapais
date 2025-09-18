@@ -12,12 +12,13 @@ const HeroSection: React.FC = () => {
       <img
         src="/bg.jpg" // Usando a nova imagem bg.jpg
         alt="Ambiente arquitetônico elegante"
-        className="absolute inset-0 w-full h-full object-cover transform scale-105 animate-[background-zoom-pan_30s_ease-in-out_infinite_alternate]" // Removida a classe opacity-70
+        className="absolute inset-0 w-full h-full object-cover transform scale-105 animate-[background-zoom-pan_30s_ease-in-out_infinite_alternate]" 
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent"></div> {/* Opacidade do overlay ajustada para 50% */}
+      {/* Overlay com opacidade ajustada para permitir a visualização da imagem */}
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent"></div> {/* Opacidade do overlay ajustada para 20% */}
 
-      <div className="relative z-10 max-w-4xl mx-auto px-4 flex flex-col items-center"> {/* Adicionado flex-col e items-center */}
-        <div className="mb-8 animate-fade-in-up"> {/* Adicionado margem inferior para espaçamento */}
+      <div className="relative z-10 max-w-4xl mx-auto px-4 flex flex-col items-center"> 
+        <div className="mb-8 animate-fade-in-up"> 
           <Logo />
         </div>
         <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight mb-4 animate-fade-in-up">
