@@ -74,6 +74,7 @@ export default {
           800: "#78543c",
           900: "#6c452a", // Adicionei um tom mais escuro para completar a escala
         },
+        "footer-background": "hsl(var(--footer-background))", // Nova cor para o rodapé
       },
       borderRadius: {
         lg: "var(--radius)",
