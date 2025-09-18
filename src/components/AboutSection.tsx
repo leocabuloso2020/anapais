@@ -5,14 +5,14 @@ const AboutSection: React.FC = () => {
     <section className="py-16 bg-background">
       <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="lg:order-2 flex justify-center">
-          <div className="relative w-full max-w-md h-[500px] rounded-lg shadow-xl overflow-hidden"> {/* Aumentado para h-[500px] */}
+          <div className="relative w-full max-w-md h-[450px] rounded-lg shadow-xl overflow-hidden"> {/* Diminuído para h-[450px] */}
             <img
               src="/sobre.png" // Caminho atualizado para a imagem que você adicionou
               alt="Ana Pais Arquitetura"
               className="w-full h-full object-cover" // Ajustado para h-full para preencher o contêiner
             />
-            {/* Overlay com gradiente de transparência */}
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-background"></div>
+            {/* Overlay com gradiente de transparência invertido para da direita para a esquerda */}
+            <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-background"></div>
           </div>
         </div>
         <div className="lg:order-1 text-center lg:text-left">
