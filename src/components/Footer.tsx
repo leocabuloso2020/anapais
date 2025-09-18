@@ -87,7 +87,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <div className="mt-12 border-t border-gray-700 pt-8 text-center text-sm text-gray-500">
-        <p className="mb-2">
+        <p className="mb-2 whitespace-nowrap"> {/* Adicionado whitespace-nowrap aqui */}
           Desenvolvido por{" "}
           <a
             href="https://wa.me/5531993305095"
