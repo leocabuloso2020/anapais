@@ -53,16 +53,16 @@ const MethodologySection: React.FC = () => {
           Acreditamos que a arquitetura vai além das paredes. É sobre transformar
           vidas e criar espaços que inspiram.
         </p>
-        <div className="mt-12 relative w-full h-[400px] overflow-hidden rounded-lg shadow-xl"> {/* Container para a imagem com overflow-hidden */}
+        <div className="mt-12 relative w-full h-[500px] overflow-hidden rounded-lg shadow-xl"> {/* Aumentado de h-[400px] para h-[500px] */}
           <img
             src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Processo de trabalho"
-            className="absolute inset-0 w-full h-full object-cover transform scale-105 animate-[background-zoom-pan_30s_ease-in-out_infinite_alternate]" // Efeito de zoom e movimento
+            className="absolute inset-0 w-full h-full object-cover transform scale-105 animate-[background-zoom-pan_30s_ease-in-out_infinite_alternate]"
           />
           {/* Overlay com gradiente de transparência para misturar com o fundo */}
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent"></div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12"> {/* Ajustado o mt para não sobrepor a imagem */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
           {steps.map((step, index) => (
             <StepCard key={index} {...step} />
           ))}
