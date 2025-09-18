@@ -18,17 +18,17 @@ const MobileNav: React.FC = () => {
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
       <SheetTrigger asChild>
         <Button variant="ghost" size="icon" className="md:hidden">
-          <MenuIcon className="h-6 w-6" />
+          <MenuIcon className="h-6 w-6 text-foreground" /> {/* Ajustado para text-foreground */}
           <span className="sr-only">Abrir menu</span>
         </Button>
       </SheetTrigger>
-      <SheetContent side="left" className="w-[250px] sm:w-[300px]">
+      <SheetContent side="left" className="w-[250px] sm:w-[300px] bg-card"> {/* Adicionado bg-card para o fundo da sheet */}
         <nav className="flex flex-col gap-4 pt-8">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-lg font-medium text-gray-700 hover:text-brand-color transition-colors"
+              className="text-lg font-medium text-foreground hover:text-brand-color transition-colors"
               onClick={() => setIsOpen(false)} // Fecha o menu ao clicar em um link
             >
               {link.label}

@@ -15,29 +15,29 @@ const Index: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col relative"> {/* 'relative' ainda é útil para outros contextos, mas a textura será no body */}
       {/* <BackgroundTexture /> Removendo o componente */}
-      <header className="w-full bg-white shadow-sm py-4 px-6 flex justify-between items-center sticky top-0 z-50">
-        <div className="text-2xl font-bold text-gray-900"></div> 
+      <header className="w-full bg-card shadow-sm py-4 px-6 flex justify-between items-center sticky top-0 z-50">
+        <div className="text-2xl font-bold text-foreground"></div> 
         
         <nav className="hidden md:block">
           <ul className="flex space-x-6">
             <li>
-              <a href="#about" className="text-gray-700 hover:text-brand-color font-medium transition-colors">
+              <a href="#about" className="text-muted-foreground hover:text-brand-color font-medium transition-colors">
                 Sobre
               </a>
             </li>
             <li>
-              <a href="#services" className="text-gray-700 hover:text-brand-color font-medium transition-colors">
+              <a href="#services" className="text-muted-foreground hover:text-brand-color font-medium transition-colors">
                 Serviços
               </a>
             </li>
             {/* Link do Portfólio removido */}
             <li>
-              <a href="#faq" className="text-gray-700 hover:text-brand-color font-medium transition-colors">
+              <a href="#faq" className="text-muted-foreground hover:text-brand-color font-medium transition-colors">
                 FAQ
               </a>
             </li>
             <li>
-              <a href="#contact" className="text-gray-700 hover:text-brand-color font-medium transition-colors">
+              <a href="#contact" className="text-muted-foreground hover:text-brand-color font-medium transition-colors">
                 Contato
               </a>
             </li>

@@ -8,10 +8,10 @@ interface StepCardProps {
 }
 
 const StepCard: React.FC<StepCardProps> = ({ icon: Icon, title, description }) => (
-  <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-md border border-gray-100">
+  <div className="flex flex-col items-center text-center p-6 bg-card rounded-lg shadow-md border border-border">
     <Icon className="h-12 w-12 text-brand-color mb-4" />
-    <h3 className="text-xl font-semibold text-gray-800 mb-2">{title}</h3>
-    <p className="text-gray-600">{description}</p>
+    <h3 className="text-xl font-semibold text-foreground mb-2">{title}</h3>
+    <p className="text-muted-foreground">{description}</p>
   </div>
 );
 
@@ -44,12 +44,12 @@ const MethodologySection: React.FC = () => {
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-background">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
           Beleza com Propósito: Nossa Metodologia
         </h2>
-        <p className="text-lg text-gray-700 mb-12 max-w-3xl mx-auto">
+        <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
           Acreditamos que a arquitetura vai além das paredes. É sobre transformar
           vidas e criar espaços que inspiram.
         </p>

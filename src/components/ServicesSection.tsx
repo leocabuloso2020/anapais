@@ -13,15 +13,15 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   title,
   description,
 }) => (
-  <Card className="flex flex-col items-center text-center p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border-none">
-    <CardHeader className="pb-4 flex flex-col items-center"> {/* Adicionado flex flex-col items-center aqui */}
+  <Card className="flex flex-col items-center text-center p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border-none bg-card"> {/* Adicionado bg-card */}
+    <CardHeader className="pb-4 flex flex-col items-center">
       <Icon className="h-12 w-12 text-brand-color mb-4" />
-      <CardTitle className="text-xl font-semibold text-gray-800">
+      <CardTitle className="text-xl font-semibold text-foreground">
         {title}
       </CardTitle>
     </CardHeader>
-    <CardContent className="text-center"> {/* Adicionado text-center aqui para garantir */}
-      <p className="text-gray-600">{description}</p>
+    <CardContent className="text-center">
+      <p className="text-muted-foreground">{description}</p>
     </CardContent>
   </Card>
 );
@@ -55,9 +55,9 @@ const ServicesSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-background">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12">
           Projetos com significado e identidade
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
