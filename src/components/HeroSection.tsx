@@ -15,7 +15,7 @@ const HeroSection: React.FC = () => {
         className="absolute inset-0 w-full h-full object-cover transform scale-105 animate-[background-zoom-pan_30s_ease-in-out_infinite_alternate]" 
       />
       {/* Overlay com opacidade ajustada para tornar a imagem de fundo mais transparente */}
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent"></div> {/* Opacidade do overlay ajustada para 30% */}
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent"></div> {/* Opacidade do overlay ajustada para 50% */}
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 flex flex-col items-center"> 
         <div className="mb-8 animate-fade-in-up"> 
