@@ -8,13 +8,13 @@ const HeroSection: React.FC = () => {
 
   return (
     <section className="relative h-[70vh] md:h-[80vh] bg-background flex items-center justify-center text-center overflow-hidden">
-      {/* Imagem de fundo - placeholder */}
+      {/* Imagem de fundo com efeito de zoom e movimento */}
       <img
-        src="https://images.unsplash.com/photo-1583847268964-dd287705ba78?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src="/bg.jpg" // Usando a nova imagem bg.jpg
         alt="Ambiente arquitetônico elegante"
-        className="absolute inset-0 w-full h-full object-cover opacity-70"
+        className="absolute inset-0 w-full h-full object-cover transform scale-105 animate-[background-zoom-pan_30s_ease-in-out_infinite_alternate]" // Adicionado scale e animação
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-transparent"></div> {/* Opacidade do overlay ajustada */}
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 flex flex-col items-center"> {/* Adicionado flex-col e items-center */}
         <div className="mb-8 animate-fade-in-up"> {/* Adicionado margem inferior para espaçamento */}

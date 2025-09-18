@@ -145,3 +145,13 @@
     transform: translate(0, 0);
   }
 }
+
+/* Nova animação para o background da Hero Section */
+@keyframes background-zoom-pan {
+  0% {
+    transform: scale(1.05) translateX(0%) translateY(0%);
+  }
+  100% {
+    transform: scale(1.15) translateX(-5%) translateY(-5%);
+  }
+}
