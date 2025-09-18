@@ -5,11 +5,15 @@ const AboutSection: React.FC = () => {
     <section className="py-16 bg-background">
       <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="lg:order-2 flex justify-center">
-          <img
-            src="/sobre.png" // Caminho atualizado para a imagem que você adicionou
-            alt="Ana Pais Arquitetura"
-            className="rounded-lg shadow-xl w-full h-auto object-cover max-w-md opacity-50" // Adicionada a classe opacity-50
-          />
+          <div className="relative w-full max-w-md rounded-lg shadow-xl overflow-hidden"> {/* Container para imagem e overlay */}
+            <img
+              src="/sobre.png" // Caminho atualizado para a imagem que você adicionou
+              alt="Ana Pais Arquitetura"
+              className="w-full h-auto object-cover" // Removida a opacidade fixa, o gradiente fará o trabalho
+            />
+            {/* Overlay com gradiente de transparência */}
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-background"></div>
+          </div>
         </div>
         <div className="lg:order-1 text-center lg:text-left">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
