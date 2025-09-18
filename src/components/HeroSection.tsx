@@ -3,6 +3,9 @@ import { Button } from "@/components/ui/button";
 import Logo from "@/components/Logo"; // Importando o componente Logo
 
 const HeroSection: React.FC = () => {
+  // Substitua '5531999999999' pelo seu número de WhatsApp (código do país + DDD + número, sem espaços ou hífens)
+  const whatsappNumber = "5531999999999"; 
+
   return (
     <section className="relative h-[70vh] md:h-[80vh] bg-gray-100 flex items-center justify-center text-center overflow-hidden">
       {/* Imagem de fundo - placeholder */}
@@ -27,14 +30,14 @@ const HeroSection: React.FC = () => {
         <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-up delay-200">
           <Button
             className="px-8 py-6 text-lg bg-brand-color hover:bg-brand-color-600 text-white shadow-lg transition-all duration-300 transform hover:scale-105"
-            onClick={() => window.open("https://wa.me/SEUNUMERO", "_blank")}
+            onClick={() => window.open(`https://wa.me/${whatsappNumber}`, "_blank")}
           >
             Quero transformar meu ambiente
           </Button>
           <Button
             variant="outline"
             className="px-8 py-6 text-lg border-brand-color text-brand-color hover:bg-brand-color/10 shadow-lg transition-all duration-300 transform hover:scale-105"
-            onClick={() => window.open("https://wa.me/SEUNUMERO", "_blank")}
+            onClick={() => window.open(`https://wa.me/${whatsappNumber}`, "_blank")}
           >
             Fale agora no WhatsApp
           </Button>
