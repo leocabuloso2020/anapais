@@ -4,20 +4,18 @@ import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
 import AboutSection from "@/components/AboutSection";
 import MethodologySection from "@/components/MethodologySection";
-import PortfolioSection from "@/components/PortfolioSection";
+// import PortfolioSection from "@/components/PortfolioSection"; // Removido
 import FAQSection from "@/components/FAQSection";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Footer from "@/components/Footer";
-import MobileNav from "@/components/MobileNav"; // Importando o novo componente MobileNav
+import MobileNav from "@/components/MobileNav";
 
 const Index: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <header className="w-full bg-white shadow-sm py-4 px-6 flex justify-between items-center sticky top-0 z-50">
-        {/* Div vazia para manter o espaçamento ou alinhamento, se necessário */}
         <div className="text-2xl font-bold text-gray-900"></div> 
         
-        {/* Navegação para desktop */}
         <nav className="hidden md:block">
           <ul className="flex space-x-6">
             <li>
@@ -30,11 +28,7 @@ const Index: React.FC = () => {
                 Serviços
               </a>
             </li>
-            <li>
-              <a href="#portfolio" className="text-gray-700 hover:text-brand-color font-medium transition-colors">
-                Portfólio
-              </a>
-            </li>
+            {/* Link do Portfólio removido */}
             <li>
               <a href="#faq" className="text-gray-700 hover:text-brand-color font-medium transition-colors">
                 FAQ
@@ -48,7 +42,6 @@ const Index: React.FC = () => {
           </ul>
         </nav>
 
-        {/* Botão de menu mobile */}
         <div className="md:hidden">
           <MobileNav />
         </div>
@@ -63,9 +56,7 @@ const Index: React.FC = () => {
           <AboutSection />
         </div>
         <MethodologySection />
-        <div id="portfolio">
-          <PortfolioSection />
-        </div>
+        {/* PortfolioSection removido */}
         <div id="faq">
           <FAQSection />
         </div>

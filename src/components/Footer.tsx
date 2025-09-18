@@ -29,11 +29,7 @@ const Footer: React.FC = () => {
                 Serviços
               </a>
             </li>
-            <li>
-              <a href="#portfolio" className="hover:text-brand-color transition-colors">
-                Portfólio
-              </a>
-            </li>
+            {/* Link do Portfólio removido */}
             <li>
               <a href="#faq" className="hover:text-brand-color transition-colors">
                 FAQ
