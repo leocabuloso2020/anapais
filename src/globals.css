@@ -99,3 +99,13 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Animação para a textura de fundo */
+@keyframes texture-scroll {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200px 200px; /* Move a textura diagonalmente */
+  }
+}

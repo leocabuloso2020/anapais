@@ -9,10 +9,12 @@ import FAQSection from "@/components/FAQSection";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Footer from "@/components/Footer";
 import MobileNav from "@/components/MobileNav";
+import BackgroundTexture from "@/components/BackgroundTexture"; // Importando o novo componente
 
 const Index: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col relative"> {/* Adicionado 'relative' para o z-index funcionar corretamente */}
+      <BackgroundTexture /> {/* Adiciona a textura de fundo */}
       <header className="w-full bg-white shadow-sm py-4 px-6 flex justify-between items-center sticky top-0 z-50">
         <div className="text-2xl font-bold text-gray-900"></div> 
         
