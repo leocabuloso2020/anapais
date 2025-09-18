@@ -21,7 +21,7 @@ const HeroSection: React.FC = () => {
         <div className="mb-8 animate-fade-in-up"> 
           <Logo />
         </div>
-        <h1 className="text-4xl md:text-6xl font-light text-foreground leading-tight mb-4 animate-fade-in-up"> {/* Alterado de font-medium para font-light */}
+        <h1 className="text-4xl md:text-6xl font-light text-foreground leading-tight mb-4 animate-fade-in-up">
           Ame sua casa. Transforme seu ambiente em um refúgio.
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground mb-8 animate-fade-in-up delay-100">
@@ -35,13 +35,7 @@ const HeroSection: React.FC = () => {
           >
             Quero transformar meu ambiente
           </Button>
-          <Button
-            variant="outline"
-            className="px-8 py-6 text-lg border-brand-color text-brand-color hover:bg-brand-color/10 shadow-lg transition-all duration-300 transform hover:scale-105"
-            onClick={() => window.open(`https://wa.me/${whatsappNumber}`, "_blank")}
-          >
-            Fale agora no WhatsApp
-          </Button>
+          {/* Botão "Fale agora no WhatsApp" removido */}
         </div>
       </div>
     </section>
