@@ -1,5 +1,5 @@
 import React from "react";
-import { MadeWithDyad } from "@/components/made-with-dyad";
+// import { MadeWithDyad } from "@/components/made-with-dyad"; // Removendo o import
 import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
 import AboutSection from "@/components/AboutSection";
@@ -68,7 +68,7 @@ const Index: React.FC = () => {
       <div id="contact">
         <Footer />
       </div>
-      <MadeWithDyad />
+      {/* <MadeWithDyad /> Removendo o componente */}
     </div>
   );
 };
