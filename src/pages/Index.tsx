@@ -8,14 +8,15 @@ import PortfolioSection from "@/components/PortfolioSection";
 import FAQSection from "@/components/FAQSection";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Footer from "@/components/Footer";
-import Logo from "@/components/Logo"; // Importando o novo componente Logo
+// Removendo a importação do Logo daqui, pois ele será movido para HeroSection
+// import Logo from "@/components/Logo"; 
 
 const Index: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <header className="w-full bg-white shadow-sm py-4 px-6 flex justify-between items-center sticky top-0 z-50">
         <div className="text-2xl font-bold text-gray-900">
-          <Logo /> {/* Usando o componente Logo aqui */}
+          Ana Pais <span className="text-brand-green">Arquitetura</span> {/* O texto original volta aqui */}
         </div>
         <nav className="hidden md:block">
           <ul className="flex space-x-6">

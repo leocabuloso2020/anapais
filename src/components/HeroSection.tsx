@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
+import Logo from "@/components/Logo"; // Importando o componente Logo
 
 const HeroSection: React.FC = () => {
   return (
@@ -12,7 +13,10 @@ const HeroSection: React.FC = () => {
       />
       <div className="absolute inset-0 bg-gradient-to-t from-white via-white/50 to-transparent"></div>
 
-      <div className="relative z-10 max-w-4xl mx-auto px-4">
+      <div className="relative z-10 max-w-4xl mx-auto px-4 flex flex-col items-center"> {/* Adicionado flex-col e items-center */}
+        <div className="mb-8 animate-fade-in-up"> {/* Adicionado margem inferior para espaçamento */}
+          <Logo />
+        </div>
         <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight mb-4 animate-fade-in-up">
           Ame sua casa. Transforme seu ambiente em um refúgio.
         </h1>
