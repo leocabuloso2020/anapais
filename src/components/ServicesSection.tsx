@@ -15,7 +15,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 }) => (
   <Card className="flex flex-col items-center text-center p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border-none">
     <CardHeader className="pb-4">
-      <Icon className="h-12 w-12 text-brand-green mb-4" />
+      <Icon className="h-12 w-12 text-brand-color mb-4" />
       <CardTitle className="text-xl font-semibold text-gray-800">
         {title}
       </CardTitle>

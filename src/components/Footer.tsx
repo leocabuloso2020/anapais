@@ -20,22 +20,22 @@ const Footer: React.FC = () => {
           <h4 className="text-lg font-semibold text-white mb-4">Links Rápidos</h4>
           <ul className="space-y-2">
             <li>
-              <a href="#about" className="hover:text-brand-green transition-colors">
+              <a href="#about" className="hover:text-brand-color transition-colors">
                 Sobre
               </a>
             </li>
             <li>
-              <a href="#services" className="hover:text-brand-green transition-colors">
+              <a href="#services" className="hover:text-brand-color transition-colors">
                 Serviços
               </a>
             </li>
             <li>
-              <a href="#portfolio" className="hover:text-brand-green transition-colors">
+              <a href="#portfolio" className="hover:text-brand-color transition-colors">
                 Portfólio
               </a>
             </li>
             <li>
-              <a href="#faq" className="hover:text-brand-green transition-colors">
+              <a href="#faq" className="hover:text-brand-color transition-colors">
                 FAQ
               </a>
             </li>
@@ -47,18 +47,18 @@ const Footer: React.FC = () => {
           <h4 className="text-lg font-semibold text-white mb-4">Contato</h4>
           <ul className="space-y-2">
             <li className="flex items-center">
-              <MapPin className="h-5 w-5 mr-2 text-brand-green" />
+              <MapPin className="h-5 w-5 mr-2 text-brand-color" />
               Belo Horizonte, MG
             </li>
             <li className="flex items-center">
-              <Mail className="h-5 w-5 mr-2 text-brand-green" />
-              <a href="mailto:contato@anapaisarq.com.br" className="hover:text-brand-green transition-colors">
+              <Mail className="h-5 w-5 mr-2 text-brand-color" />
+              <a href="mailto:contato@anapaisarq.com.br" className="hover:text-brand-color transition-colors">
                 contato@anapaisarq.com.br
               </a>
             </li>
             <li className="flex items-center">
-              <Phone className="h-5 w-5 mr-2 text-brand-green" />
-              <a href="tel:+5531999999999" className="hover:text-brand-green transition-colors">
+              <Phone className="h-5 w-5 mr-2 text-brand-color" />
+              <a href="tel:+5531999999999" className="hover:text-brand-color transition-colors">
                 (31) 99999-9999
               </a>
             </li>
@@ -74,7 +74,7 @@ const Footer: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="hover:text-brand-green transition-colors"
+              className="hover:text-brand-color transition-colors"
             >
               <Instagram className="h-6 w-6" />
             </a>
@@ -83,7 +83,7 @@ const Footer: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
-              className="hover:text-brand-green transition-colors"
+              className="hover:text-brand-color transition-colors"
             >
               <Facebook className="h-6 w-6" />
             </a>

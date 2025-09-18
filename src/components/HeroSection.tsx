@@ -26,14 +26,14 @@ const HeroSection: React.FC = () => {
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-up delay-200">
           <Button
-            className="px-8 py-6 text-lg bg-brand-green hover:bg-brand-green-600 text-white shadow-lg transition-all duration-300 transform hover:scale-105"
+            className="px-8 py-6 text-lg bg-brand-color hover:bg-brand-color-600 text-white shadow-lg transition-all duration-300 transform hover:scale-105"
             onClick={() => window.open("https://wa.me/SEUNUMERO", "_blank")}
           >
             Quero transformar meu ambiente
           </Button>
           <Button
             variant="outline"
-            className="px-8 py-6 text-lg border-brand-green text-brand-green hover:bg-brand-green/10 shadow-lg transition-all duration-300 transform hover:scale-105"
+            className="px-8 py-6 text-lg border-brand-color text-brand-color hover:bg-brand-color/10 shadow-lg transition-all duration-300 transform hover:scale-105"
             onClick={() => window.open("https://wa.me/SEUNUMERO", "_blank")}
           >
             Fale agora no WhatsApp

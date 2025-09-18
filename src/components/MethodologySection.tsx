@@ -9,7 +9,7 @@ interface StepCardProps {
 
 const StepCard: React.FC<StepCardProps> = ({ icon: Icon, title, description }) => (
   <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-md border border-gray-100">
-    <Icon className="h-12 w-12 text-brand-green mb-4" />
+    <Icon className="h-12 w-12 text-brand-color mb-4" />
     <h3 className="text-xl font-semibold text-gray-800 mb-2">{title}</h3>
     <p className="text-gray-600">{description}</p>
   </div>

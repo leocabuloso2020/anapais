@@ -22,7 +22,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     <CardContent className="p-6 text-center">
       <h3 className="text-xl font-semibold text-gray-800 mb-2">{title}</h3>
       <p className="text-gray-600 mb-4">{description}</p>
-      <Button variant="outline" className="border-brand-green text-brand-green hover:bg-brand-green/10">
+      <Button variant="outline" className="border-brand-color text-brand-color hover:bg-brand-color/10">
         Ver Mais
       </Button>
     </CardContent>

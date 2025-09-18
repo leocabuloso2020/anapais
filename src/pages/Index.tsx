@@ -16,32 +16,32 @@ const Index: React.FC = () => {
     <div className="min-h-screen flex flex-col">
       <header className="w-full bg-white shadow-sm py-4 px-6 flex justify-between items-center sticky top-0 z-50">
         <div className="text-2xl font-bold text-gray-900">
-          Ana Pais <span className="text-brand-green">Arquitetura</span> {/* O texto original volta aqui */}
+          Ana Pais <span className="text-brand-color">Arquitetura</span> {/* O texto original volta aqui */}
         </div>
         <nav className="hidden md:block">
           <ul className="flex space-x-6">
             <li>
-              <a href="#about" className="text-gray-700 hover:text-brand-green font-medium transition-colors">
+              <a href="#about" className="text-gray-700 hover:text-brand-color font-medium transition-colors">
                 Sobre
               </a>
             </li>
             <li>
-              <a href="#services" className="text-gray-700 hover:text-brand-green font-medium transition-colors">
+              <a href="#services" className="text-gray-700 hover:text-brand-color font-medium transition-colors">
                 Serviços
               </a>
             </li>
             <li>
-              <a href="#portfolio" className="text-gray-700 hover:text-brand-green font-medium transition-colors">
+              <a href="#portfolio" className="text-gray-700 hover:text-brand-color font-medium transition-colors">
                 Portfólio
               </a>
             </li>
             <li>
-              <a href="#faq" className="text-gray-700 hover:text-brand-green font-medium transition-colors">
+              <a href="#faq" className="text-gray-700 hover:text-brand-color font-medium transition-colors">
                 FAQ
               </a>
             </li>
             <li>
-              <a href="#contact" className="text-gray-700 hover:text-brand-green font-medium transition-colors">
+              <a href="#contact" className="text-gray-700 hover:text-brand-color font-medium transition-colors">
                 Contato
               </a>
             </li>
