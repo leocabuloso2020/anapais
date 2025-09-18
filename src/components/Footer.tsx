@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         {/* Logo/Branding */}
         <div className="col-span-full md:col-span-1 text-center md:text-left mb-6 md:mb-0">
           <h3 className="text-2xl font-bold text-white mb-2">
-            Ana Pais Arquitetura
+            {/* Ana Pais Arquitetura */}
           </h3>
           <p className="text-sm">
             Transformando ambientes em refúgios de bem-estar.

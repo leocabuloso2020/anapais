@@ -13,7 +13,7 @@ const AboutSection: React.FC = () => {
         </div>
         <div className="lg:order-1 text-center lg:text-left">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Ana Pais Arquitetura: Criatividade e Funcionalidade
+            Criatividade e Funcionalidade
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-4">
             Com 12 anos de experiência, Ana Cláudia Pais lidera um escritório
