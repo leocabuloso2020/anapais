@@ -8,16 +8,16 @@ import PortfolioSection from "@/components/PortfolioSection";
 import FAQSection from "@/components/FAQSection";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Footer from "@/components/Footer";
-// Removendo a importação do Logo daqui, pois ele será movido para HeroSection
-// import Logo from "@/components/Logo"; 
+import MobileNav from "@/components/MobileNav"; // Importando o novo componente MobileNav
 
 const Index: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <header className="w-full bg-white shadow-sm py-4 px-6 flex justify-between items-center sticky top-0 z-50">
-        <div className="text-2xl font-bold text-gray-900">
-          {/* Removido o texto "Ana Pais Arquitetura" */}
-        </div>
+        {/* Div vazia para manter o espaçamento ou alinhamento, se necessário */}
+        <div className="text-2xl font-bold text-gray-900"></div> 
+        
+        {/* Navegação para desktop */}
         <nav className="hidden md:block">
           <ul className="flex space-x-6">
             <li>
@@ -47,7 +47,11 @@ const Index: React.FC = () => {
             </li>
           </ul>
         </nav>
-        {/* Mobile menu toggle could go here */}
+
+        {/* Botão de menu mobile */}
+        <div className="md:hidden">
+          <MobileNav />
+        </div>
       </header>
 
       <main className="flex-grow">
