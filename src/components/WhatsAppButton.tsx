@@ -4,7 +4,7 @@ import { MessageCircle } from "lucide-react";
 
 const WhatsAppButton: React.FC = () => {
   // Substitua '5531999999999' pelo seu número de WhatsApp (código do país + DDD + número, sem espaços ou hífens)
-  const whatsappLink = "https://wa.me/5531999999999"; 
+  const whatsappLink = "https://wa.me/5531993221301"; 
 
   return (
     <a

@@ -4,7 +4,7 @@ import Logo from "@/components/Logo"; // Importando o componente Logo
 
 const HeroSection: React.FC = () => {
   // Substitua '5531999999999' pelo seu número de WhatsApp (código do país + DDD + número, sem espaços ou hífens)
-  const whatsappNumber = "5531999999999"; 
+  const whatsappNumber = "5531993221301"; 
 
   return (
     <section className="relative h-[70vh] md:h-[80vh] bg-background flex items-center justify-center text-center overflow-hidden">
