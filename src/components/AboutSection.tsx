@@ -4,11 +4,11 @@ const AboutSection: React.FC = () => {
   return (
     <section className="py-16 bg-background">
       <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div className="lg:order-2 flex justify-center"> {/* Adicionado 'flex justify-center' para centralizar a imagem na coluna */}
+        <div className="lg:order-2 flex justify-center">
           <img
             src="/sobre.png" // Caminho atualizado para a imagem que você adicionou
             alt="Ana Pais Arquitetura"
-            className="rounded-lg shadow-xl w-full h-auto object-cover max-w-md" // Reduzido o tamanho com max-w-md
+            className="rounded-lg shadow-xl w-full h-auto object-cover max-w-md opacity-50" // Adicionada a classe opacity-50
           />
         </div>
         <div className="lg:order-1 text-center lg:text-left">
