@@ -5,7 +5,7 @@ const Logo: React.FC = () => {
     <img
       src="/logo.svg" // Certifique-se de que o arquivo logo.svg esteja na pasta 'public'
       alt="Ana Pais Arquitetura Logo"
-      className="h-32 w-auto" // Ajustado o tamanho para h-32
+      className="h-64 w-auto" // Ampliado o tamanho para h-64
     />
   );
 };
