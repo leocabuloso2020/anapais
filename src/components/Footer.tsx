@@ -87,7 +87,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <div className="mt-12 border-t border-gray-700 pt-8 text-center text-sm text-gray-500">
-        <p className="mb-2 whitespace-nowrap"> {/* Adicionado whitespace-nowrap aqui */}
+        <p className="whitespace-nowrap"> {/* Adicionado whitespace-nowrap e combinado as linhas */}
           Desenvolvido por{" "}
           <a
             href="https://wa.me/5531993305095"
@@ -96,10 +96,8 @@ const Footer: React.FC = () => {
             className="hover:text-brand-color transition-colors underline"
           >
             Yesterday Agência - (31) 99330-5095
-          </a>
-        </p>
-        <p>
-          © {new Date().getFullYear()} Ana Pais Arquitetura. Todos os direitos reservados.
+          </a>{" "}
+          © 2025 Ana Pais Arquitetura. Todos os direitos reservados.
         </p>
       </div>
     </footer>
