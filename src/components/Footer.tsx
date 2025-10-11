@@ -3,7 +3,7 @@ import { Instagram, Facebook, MapPin, Mail, Phone } from "lucide-react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-footer-background text-gray-300 py-8 min-h-[calc(100vh-72px)] flex flex-col justify-center"> {/* Alterado py-12 para py-8, adicionado min-h-[calc(100vh-72px)] e flex flex-col justify-center */}
+    <footer className="bg-footer-background text-gray-300 py-8"> {/* Removido min-h-[calc(100vh-72px)] e flex flex-col justify-center */}
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Logo/Branding */}
         <div className="col-span-full md:col-span-1 text-center md:text-left mb-6 md:mb-0">
