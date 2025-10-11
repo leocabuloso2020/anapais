@@ -176,3 +176,21 @@
     transform: scale(1.15) translateX(-5%) translateY(-5%);
   }
 }
+
+/* Animação para a imagem da seção 'Sobre' (fade-in da direita) */
+@keyframes fade-in-from-right {
+  0% {
+    opacity: 0;
+    transform: translateX(50px); /* Começa 50px à direita */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* Termina na posição original */
+  }
+}
+
+@layer utilities {
+  .animate-fade-in-from-right {
+    animation: fade-in-from-right 1s ease-out forwards; /* Aplica a animação */
+  }
+}
