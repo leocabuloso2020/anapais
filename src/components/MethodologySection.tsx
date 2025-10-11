@@ -68,9 +68,8 @@ const MethodologySection: React.FC = () => {
           Acreditamos que a arquitetura vai além das paredes. É sobre transformar
           vidas e criar espaços que inspiram.
         </p>
-        <div className={`mt-12 relative w-full h-[400px] overflow-hidden rounded-lg shadow-xl ${inView ? "animate-fade-in-from-right" : "opacity-0 translate-x-12"}`}> {/* Aplicando a animação aqui */}
+        <div className={`mt-12 relative w-full h-[550px] overflow-hidden rounded-lg shadow-xl ${inView ? "animate-fade-in-from-right" : "opacity-0 translate-x-12"}`}> {/* Altura do carrossel ajustada para h-[550px] */}
           <ImageCarousel images={carouselImages} altText="Processo de trabalho" />
-          {/* O overlay com gradiente de transparência foi movido para dentro do ImageCarousel se necessário, ou pode ser removido se o carrossel já tiver um bom visual */}
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
           {steps.map((step, index) => (
