@@ -5,28 +5,28 @@
 @layer base {
   :root {
     --background: 220 5% 10%; /* Cinza chumbo escuro */
-    --foreground: 210 40% 98%; /* Texto claro */
+    --foreground: 0 0% 100%; /* Texto branco puro */
 
     --card: 220 5% 10%;
-    --card-foreground: 210 40% 98%;
+    --card-foreground: 0 0% 100%; /* Texto branco puro */
 
     --popover: 220 5% 10%;
-    --popover-foreground: 210 40% 98%;
+    --popover-foreground: 0 0% 100%; /* Texto branco puro */
 
     --primary: 210 40% 98%; /* Cor primária clara para elementos interativos */
     --primary-foreground: 220 5% 15%; /* Texto escuro sobre primário */
 
     --secondary: 220 5% 15%; /* Cinza chumbo um pouco mais claro para secundário */
-    --secondary-foreground: 210 40% 98%;
+    --secondary-foreground: 0 0% 100%; /* Texto branco puro */
 
     --muted: 220 5% 15%;
-    --muted-foreground: 215 20.2% 65.1%; /* Texto muted mais claro */
+    --muted-foreground: 0 0% 90%; /* Texto muted muito claro (quase branco) */
 
     --accent: 220 5% 15%;
-    --accent-foreground: 210 40% 98%;
+    --accent-foreground: 0 0% 100%; /* Texto branco puro */
 
     --destructive: 0 62.8% 30.6%; /* Vermelho escuro */
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 210 40% 98%; /* Texto claro sobre destrutivo */
 
     --border: 220 5% 15%;
     --input: 220 5% 15%;
@@ -34,7 +34,7 @@
 
     --radius: 0.5rem;
 
-    --sidebar-background: 240 5.9% 10%; /* Mantido como estava, se precisar ajustar, me avise */
+    --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
     --sidebar-primary-foreground: 0 0% 100%;
@@ -43,33 +43,33 @@
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    --footer-background: 220 5% 7%; /* 10% mais escuro que --background (10% - 3% = 7%) */
+    --footer-background: 220 5% 7%;
   }
 
   .dark {
     --background: 220 5% 8%; /* Cinza chumbo ainda mais escuro para o tema dark */
-    --foreground: 210 40% 98%;
+    --foreground: 0 0% 100%; /* Texto branco puro */
 
     --card: 220 5% 8%;
-    --card-foreground: 210 40% 98%;
+    --card-foreground: 0 0% 100%; /* Texto branco puro */
 
     --popover: 220 5% 8%;
-    --popover-foreground: 210 40% 98%;
+    --popover-foreground: 0 0% 100%; /* Texto branco puro */
 
     --primary: 210 40% 98%;
-    --primary-foreground: 220 5% 12%;
+    --primary-foreground: 220 5% 12%; /* Texto escuro sobre primário */
 
     --secondary: 220 5% 12%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary-foreground: 0 0% 100%; /* Texto branco puro */
 
     --muted: 220 5% 12%;
-    --muted-foreground: 215 20.2% 60%;
+    --muted-foreground: 0 0% 90%; /* Texto muted muito claro (quase branco) */
 
     --accent: 220 5% 12%;
-    --accent-foreground: 210 40% 98%;
+    --accent-foreground: 0 0% 100%; /* Texto branco puro */
 
     --destructive: 0 62.8% 25%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 210 40% 98%; /* Texto claro sobre destrutivo */
 
     --border: 220 5% 12%;
     --input: 220 5% 12%;
@@ -83,7 +83,7 @@
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    --footer-background: 220 5% 5%; /* 10% mais escuro que --background (8% - 3% = 5%) para o tema dark */
+    --footer-background: 220 5% 5%;
   }
 }
 
