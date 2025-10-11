@@ -7,12 +7,12 @@ const AboutSection: React.FC = () => {
     threshold: 0.3, // A animação será ativada quando 30% da seção estiver visível
   });
 
-  // URLs das imagens para o carrossel
+  // URLs das imagens para o carrossel (agora usando as imagens que você enviou)
   const carouselImages = [
-    "/sobre.png", // Sua imagem original
-    "https://images.unsplash.com/photo-1583847268964-dd285dc668d8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1567016376408-0226e4d7c12f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1556912167-f556f1f39195?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "/img01.jpg",
+    "/img02.jpg",
+    "/img03.jpg",
+    "/img04.jpg",
   ];
 
   return (
