@@ -11,55 +11,57 @@ import { Instagram, Facebook } from "lucide-react";
 const Index: React.FC = () => {
   return (
     <div className="h-screen w-full max-w-full overflow-y-scroll scroll-snap-type-y-mandatory hide-scrollbar" style={{ scrollPaddingTop: '72px' }}>
-      <header className="fixed top-0 left-0 right-0 w-full bg-card shadow-sm py-4 px-6 flex items-center justify-between z-50">
-        {/* Placeholder vazio para equilibrar o layout no desktop */}
-        <div className="hidden md:block w-24"></div> {/* Largura aproximada dos ícones sociais */}
-        
-        {/* Navigation Links (Desktop) - Centralizado */}
-        <nav className="hidden md:flex flex-grow justify-center">
-          <ul className="flex space-x-6">
-            <li>
-              <a href="#about" className="text-muted-foreground hover:text-brand-color font-medium transition-colors">
-                Sobre
-              </a>
-            </li>
-            <li>
-              <a href="#services" className="text-muted-foreground hover:text-brand-color font-medium transition-colors">
-                Serviços
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="text-muted-foreground hover:text-brand-color font-medium transition-colors">
-                Contato
-              </a>
-            </li>
-          </ul>
-        </nav>
+      <header className="fixed top-0 left-0 right-0 w-full bg-card shadow-sm py-4 flex items-center justify-between z-50"> {/* Removido px-6 do header */}
+        <div className="container mx-auto flex items-center justify-between"> {/* Adicionado container mx-auto para gerenciar padding interno */}
+          {/* Placeholder vazio para equilibrar o layout no desktop */}
+          <div className="hidden md:block w-24"></div> {/* Largura aproximada dos ícones sociais */}
+          
+          {/* Navigation Links (Desktop) - Centralizado */}
+          <nav className="hidden md:flex flex-grow justify-center">
+            <ul className="flex space-x-6">
+              <li>
+                <a href="#about" className="text-muted-foreground hover:text-brand-color font-medium transition-colors">
+                  Sobre
+                </a>
+              </li>
+              <li>
+                <a href="#services" className="text-muted-foreground hover:text-brand-color font-medium transition-colors">
+                  Serviços
+                </a>
+              </li>
+              <li>
+                <a href="#contact" className="text-muted-foreground hover:text-brand-color font-medium transition-colors">
+                  Contato
+                </a>
+              </li>
+            </ul>
+          </nav>
 
-        {/* Redes Sociais no cabeçalho para desktop - Alinhado à direita */}
-        <div className="hidden md:flex items-center space-x-4 w-24 justify-end"> {/* Definindo largura e justify-end para alinhar à direita */}
-          <a
-            href="https://instagram.com/anapaisarquitetura"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-            className="text-muted-foreground hover:text-brand-color transition-colors"
-          >
-            <Instagram className="h-6 w-6" />
-          </a>
-          <a
-            href="https://facebook.com/anapaisarquitetura"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Facebook"
-            className="text-muted-foreground hover:text-brand-color transition-colors"
-          >
-            <Facebook className="h-6 w-6" />
-          </a>
-        </div>
+          {/* Redes Sociais no cabeçalho para desktop - Alinhado à direita */}
+          <div className="hidden md:flex items-center space-x-4 w-24 justify-end"> {/* Definindo largura e justify-end para alinhar à direita */}
+            <a
+              href="https://instagram.com/anapaisarquitetura"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="text-muted-foreground hover:text-brand-color transition-colors"
+            >
+              <Instagram className="h-6 w-6" />
+            </a>
+            <a
+              href="https://facebook.com/anapaisarquitetura"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="text-muted-foreground hover:text-brand-color transition-colors"
+            >
+              <Facebook className="h-6 w-6" />
+            </a>
+          </div>
 
-        <div className="md:hidden">
-          <MobileNav />
+          <div className="md:hidden">
+            <MobileNav />
+          </div>
         </div>
       </header>
 
