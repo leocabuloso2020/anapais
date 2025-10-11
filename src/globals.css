@@ -130,7 +130,7 @@
     opacity: 0.05;
     background-image: radial-gradient(circle, rgba(0,0,0,0.1) 1px, transparent 1px);
     background-size: 2px 2px;
-    /* animation: grain-animation 10s infinite linear; */ /* Temporariamente desativado */
+    /* animation: grain-animation 10s infinite linear; */ /* Desativado */
   }
 }
 
@@ -174,10 +174,10 @@
 /* Nova animação para o background da Hero Section */
 @keyframes background-zoom-pan {
   0% {
-    transform: scale(1.05) translateX(0%) translateY(0%);
+    transform: scale(1.05); /* Removido translateX e translateY */
   }
   100% {
-    transform: scale(1.15) translateX(-5%) translateY(-5%);
+    transform: scale(1.15); /* Removido translateX e translateY */
   }
 }
 
