@@ -18,6 +18,11 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['"Caviar Dreams"', 'sans-serif'], // Define Caviar Dreams como a fonte sans padrão
+        // Você pode adicionar outras variantes se quiser, por exemplo:
+        // 'caviar-dreams-bold': ['"Caviar Dreams Bold"', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
