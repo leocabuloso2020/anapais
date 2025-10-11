@@ -10,7 +10,7 @@ const Logo: React.FC<LogoProps> = ({ className }) => {
     <img
       src="/logo.svg" // O arquivo logo.svg na pasta 'public' foi atualizado
       alt="Ana Pais Arquitetura Logo"
-      className={cn("h-64 w-auto", className)} // Aplicando className para permitir sobrescrever o tamanho padrão
+      className={cn("h-40 sm:h-48 md:h-64 w-auto", className)} // Ajustado para ser responsivo: h-40 em mobile, h-48 em sm, h-64 em md e acima
     />
   );
 };
