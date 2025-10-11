@@ -106,17 +106,18 @@
 
 @layer base {
   html {
-    /* Removendo overflow-x: hidden para diagnóstico */
+    overflow-x: hidden; /* Reativado */
   }
   body {
-    /* Removendo overflow-x: hidden para diagnóstico */
+    overflow-x: hidden; /* Reativado */
     @apply bg-background text-foreground font-sans;
     position: relative;
   }
 
-  /* Adicionando borda vermelha a todos os elementos para diagnóstico */
+  /* Removendo borda vermelha de todos os elementos */
   * {
-    border: 1px solid red !important;
+    /* border: 1px solid red !important; */
+    @apply border-border; /* Revertendo para a borda padrão do Tailwind */
   }
 
   body::before {

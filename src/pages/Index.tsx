@@ -10,7 +10,7 @@ import { Instagram, Facebook } from "lucide-react";
 
 const Index: React.FC = () => {
   return (
-    <div className="h-screen w-full max-w-full overflow-y-scroll scroll-snap-type-y-mandatory"> {/* Removido hide-scrollbar */}
+    <div className="w-full max-w-full"> {/* Simplificado para w-full max-w-full */}
       <header className="fixed top-0 left-0 right-0 w-full bg-card shadow-sm py-4 flex items-center justify-between z-50">
         <div className="container mx-auto flex items-center justify-between">
           {/* Placeholder vazio para equilibrar o layout no desktop */}
@@ -66,22 +66,22 @@ const Index: React.FC = () => {
       </header>
 
       {/* Seções de conteúdo principal */}
-      <div className="scroll-snap-align-start">
+      <div> {/* Removido scroll-snap-align-start */}
         <HeroSection />
       </div>
-      <div id="services" className="scroll-snap-align-start">
+      <div id="services"> {/* Removido scroll-snap-align-start */}
         <ServicesSection />
       </div>
-      <div id="about" className="scroll-snap-align-start">
+      <div id="about"> {/* Removido scroll-snap-align-start */}
         <AboutSection />
       </div>
-      <div className="scroll-snap-align-start">
+      <div> {/* Removido scroll-snap-align-start */}
         <MethodologySection />
       </div>
-      <div className="scroll-snap-align-start">
+      <div> {/* Removido scroll-snap-align-start */}
         <MethodologyStepsSection />
       </div>
-      <div id="contact" className="scroll-snap-align-start">
+      <div id="contact"> {/* Removido scroll-snap-align-start */}
         <Footer />
       </div>
     </div>
