@@ -59,19 +59,19 @@ const MethodologySection: React.FC = () => {
   ];
 
   return (
-    <section ref={ref} className="py-16 bg-background"> {/* Removido min-h e flex justify-center */}
+    <section ref={ref} className="py-8 bg-background min-h-[calc(100vh-72px)] flex items-center"> {/* Reintroduzido min-h e flex items-center, py-8 */}
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
           Beleza com Propósito: Nossa Metodologia
         </h2>
-        <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
+        <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto"> {/* mb-8 */}
           Acreditamos que a arquitetura vai além das paredes. É sobre transformar
           vidas e criar espaços que inspiram.
         </p>
-        <div className={`mt-12 relative w-full h-[550px] overflow-hidden rounded-lg shadow-xl ${inView ? "animate-fade-in-from-right" : "opacity-0 translate-x-12"}`}> {/* Altura do carrossel ajustada para h-[550px] */}
+        <div className={`mt-8 relative w-full h-[250px] overflow-hidden rounded-lg shadow-xl ${inView ? "animate-fade-in-from-right" : "opacity-0 translate-x-12"}`}> {/* mt-8 e h-[250px] */}
           <ImageCarousel images={carouselImages} altText="Processo de trabalho" />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8"> {/* gap-4 e mt-8 */}
           {steps.map((step, index) => (
             <StepCard key={index} {...step} />
           ))}
