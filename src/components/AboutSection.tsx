@@ -1,23 +1,23 @@
 import React from "react";
-import { useInView } from "@/hooks/use-in-view"; // Mantendo o import, mas não usando a lógica de inView para a imagem aqui
-import ImageCarousel from "@/components/ImageCarousel"; // Removendo o uso do ImageCarousel aqui
+import { useInView } from "@/hooks/use-in-view"; // Mantendo o import do hook useInView
 
 const AboutSection: React.FC = () => {
-  // O hook useInView não será mais usado para a imagem nesta seção, mas pode ser útil para outros elementos se necessário.
-  // Por simplicidade, vou remover a lógica de inView para a imagem aqui.
-  const [ref] = useInView({ threshold: 0.3 }); // Mantendo o ref para a seção, caso queira animar o texto, por exemplo.
+  const [ref, inView] = useInView({
+    threshold: 0.3, // A animação será ativada quando 30% da seção estiver visível
+  });
 
   return (
     <section ref={ref} className="py-16 bg-background min-h-[calc(100vh-72px)] flex items-center">
       <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="lg:order-2 flex justify-center">
-          <div className="relative w-full max-w-md h-[400px] rounded-lg shadow-xl overflow-hidden"> {/* Removendo a classe de animação */}
+          <div className={`relative w-full max-w-md h-[400px] rounded-lg shadow-xl overflow-hidden ${inView ? "animate-fade-in-from-right" : "opacity-0 translate-x-12"}`}> {/* Reaplicando a classe de animação */}
             <img
-              src="/sobre.png" // Voltando para a imagem original
+              src="/sobre.png"
               alt="Ana Pais Arquitetura"
               className="w-full h-full object-cover"
             />
-            {/* Removendo o overlay de gradiente se não for mais necessário */}
+            {/* Overlay com gradiente de transparência invertido para da direita para a esquerda */}
+            <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-background"></div>
           </div>
         </div>
         <div className="lg:order-1 text-center lg:text-left">
