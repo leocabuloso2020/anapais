@@ -14,8 +14,8 @@ const Index: React.FC = () => {
       <header className="fixed top-0 left-0 right-0 w-full bg-card shadow-sm py-4 px-6 flex justify-between items-center z-50">
         <div className="text-2xl font-bold text-foreground">
           <a href="/" className="flex items-center">
-            {/* Usando uma tag img direta para um logo menor no cabeçalho */}
-            <img src="/logo.svg" alt="Ana Pais Arquitetura Logo" className="h-10 w-auto filter invert" />
+            {/* Logo removido daqui */}
+            Ana Pais Arquitetura
           </a>
         </div>
         
