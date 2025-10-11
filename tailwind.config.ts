@@ -13,8 +13,8 @@ export default {
     container: {
       center: true,
       padding: {
-        DEFAULT: "0rem", // Padding padrão de 0 para telas pequenas
-        md: "2rem",      // Padding de 2rem (32px) para telas médias e maiores
+        DEFAULT: "1rem", // Padding padrão de 1rem (px-4) para telas pequenas
+        md: "2rem",      // Padding de 2rem (px-8) para telas médias e maiores
       },
       screens: {
         "2xl": "1400px",

@@ -32,7 +32,7 @@ const FAQSection: React.FC = () => {
 
   return (
     <section className="py-16 bg-background">
-      <div className="container mx-auto text-center max-w-3xl px-4"> {/* Adicionado px-4 aqui */}
+      <div className="container mx-auto text-center max-w-3xl"> {/* Removido px-4 */}
         <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12">
           Perguntas Frequentes
         </h2>

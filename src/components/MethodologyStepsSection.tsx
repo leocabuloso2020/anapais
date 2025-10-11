@@ -50,7 +50,7 @@ const MethodologyStepsSection: React.FC = () => {
 
   return (
     <section ref={ref} className="py-16 bg-background min-h-[calc(100vh-72px)] flex items-center">
-      <div className="container mx-auto text-center px-4"> {/* Adicionado px-4 aqui */}
+      <div className="container mx-auto text-center"> {/* Removido px-4 */}
         <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12">
           Nosso Processo Criativo
         </h2>

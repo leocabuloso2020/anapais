@@ -10,9 +10,9 @@ import { Instagram, Facebook } from "lucide-react";
 
 const Index: React.FC = () => {
   return (
-    <div className="h-screen w-full max-w-full overflow-y-scroll scroll-snap-type-y-mandatory" style={{ scrollPaddingTop: '72px' }}> {/* Removido hide-scrollbar */}
+    <div className="h-screen w-full max-w-full overflow-y-scroll scroll-snap-type-y-mandatory hide-scrollbar" style={{ scrollPaddingTop: '72px' }}> {/* Reativado hide-scrollbar */}
       <header className="fixed top-0 left-0 right-0 w-full bg-card shadow-sm py-4 flex items-center justify-between z-50">
-        <div className="container mx-auto flex items-center justify-between px-4">
+        <div className="container mx-auto flex items-center justify-between"> {/* Removido px-4 */}
           {/* Placeholder vazio para equilibrar o layout no desktop */}
           <div className="hidden md:block w-24"></div>
           

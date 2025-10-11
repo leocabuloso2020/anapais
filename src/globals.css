@@ -106,10 +106,10 @@
 
 @layer base {
   html {
-    /* overflow-x: hidden; */ /* Removido temporariamente */
+    overflow-x: hidden; /* Reativado */
   }
   body {
-    /* overflow-x: hidden; */ /* Removido temporariamente */
+    overflow-x: hidden; /* Reativado */
     @apply bg-background text-foreground font-sans;
     position: relative;
   }
