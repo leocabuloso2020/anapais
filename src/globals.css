@@ -130,7 +130,7 @@
     opacity: 0.05;
     background-image: radial-gradient(circle, rgba(0,0,0,0.1) 1px, transparent 1px);
     background-size: 2px 2px;
-    /* animation: grain-animation 10s infinite linear; */ /* Desativado para diagnóstico */
+    animation: grain-animation 10s infinite linear; /* Reativado */
   }
 }
 
@@ -174,10 +174,10 @@
 /* Nova animação para o background da Hero Section */
 @keyframes background-zoom-pan {
   0% {
-    transform: scale(1.05); /* Desativado translateX e translateY para diagnóstico */
+    transform: scale(1.05) translateX(0%) translateY(0%); /* Reativado */
   }
   100% {
-    transform: scale(1.15); /* Desativado translateX e translateY para diagnóstico */
+    transform: scale(1.15) translateX(-5%) translateY(-5%); /* Reativado */
   }
 }
 
@@ -185,7 +185,7 @@
 @keyframes fade-in-from-right {
   0% {
     opacity: 0;
-    transform: translateX(0px); /* Reduzido para 0px para diagnóstico */
+    transform: translateX(10px);
   }
   100% {
     opacity: 1;
@@ -195,7 +195,7 @@
 
 @layer utilities {
   .animate-fade-in-from-right {
-    /* animation: fade-in-from-right 1s ease-out forwards; */ /* Desativado para diagnóstico */
+    animation: fade-in-from-right 1s ease-out forwards; /* Reativado */
   }
 
   /* Estilos para esconder a barra de rolagem */
