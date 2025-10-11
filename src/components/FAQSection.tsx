@@ -31,9 +31,9 @@ const FAQSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-12 bg-background"> {/* Alterado py-16 para py-12 */}
+    <section className="py-12 bg-background min-h-[calc(100vh-72px)] flex flex-col justify-center"> {/* Alterado py-16 para py-12, adicionado min-h-[calc(100vh-72px)] e flex flex-col justify-center */}
       <div className="container mx-auto px-4 text-center max-w-3xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
+        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8"> {/* Alterado mb-12 para mb-8 */}
           Perguntas Frequentes
         </h2>
         <Accordion type="single" collapsible className="w-full">

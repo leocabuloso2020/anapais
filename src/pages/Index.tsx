@@ -48,24 +48,23 @@ const Index: React.FC = () => {
         </div>
       </header>
 
-      {/* Seções de conteúdo principal, cada uma se encaixando na tela cheia */}
-      {/* Removido pt-[72px] das divs das seções, pois scroll-padding-top no pai já resolve */}
-      <div className="h-screen scroll-snap-align-start">
+      {/* Seções de conteúdo principal, agora com wrappers sem h-screen */}
+      <div className="scroll-snap-align-start">
         <HeroSection />
       </div>
-      <div id="services" className="h-screen scroll-snap-align-start">
+      <div id="services" className="scroll-snap-align-start">
         <ServicesSection />
       </div>
-      <div id="about" className="h-screen scroll-snap-align-start">
+      <div id="about" className="scroll-snap-align-start">
         <AboutSection />
       </div>
-      <div className="h-screen scroll-snap-align-start"> {/* MethodologySection */}
+      <div className="scroll-snap-align-start"> {/* MethodologySection */}
         <MethodologySection />
       </div>
-      <div id="faq" className="h-screen scroll-snap-align-start">
+      <div id="faq" className="scroll-snap-align-start">
         <FAQSection />
       </div>
-      <div id="contact" className="h-screen scroll-snap-align-start">
+      <div id="contact" className="scroll-snap-align-start">
         <Footer />
       </div>
 

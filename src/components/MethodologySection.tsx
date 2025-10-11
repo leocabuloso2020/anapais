@@ -44,7 +44,7 @@ const MethodologySection: React.FC = () => {
   ];
 
   return (
-    <section className="py-16 bg-background">
+    <section className="py-16 bg-background min-h-[calc(100vh-72px)] flex flex-col justify-center"> {/* Adicionado min-h-[calc(100vh-72px)] e flex flex-col justify-center */}
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
           Beleza com Propósito: Nossa Metodologia
