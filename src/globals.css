@@ -193,4 +193,15 @@
   .animate-fade-in-from-right {
     animation: fade-in-from-right 1s ease-out forwards; /* Aplica a animação */
   }
+
+  /* Estilos para esconder a barra de rolagem */
+  .hide-scrollbar {
+    /* Para Webkit (Chrome, Safari) */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
 }
