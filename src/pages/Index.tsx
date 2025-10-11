@@ -10,11 +10,11 @@ import { Instagram, Facebook } from "lucide-react";
 
 const Index: React.FC = () => {
   return (
-    <div className="h-screen w-full max-w-full overflow-y-scroll scroll-snap-type-y-mandatory hide-scrollbar" style={{ scrollPaddingTop: '72px' }}>
-      <header className="fixed top-0 left-0 right-0 w-full bg-card shadow-sm py-4 flex items-center justify-between z-50"> {/* Removido px-6 do header */}
-        <div className="container mx-auto flex items-center justify-between px-4"> {/* Adicionado px-4 aqui */}
+    <div className="h-screen w-full max-w-full overflow-y-scroll scroll-snap-type-y-mandatory" style={{ scrollPaddingTop: '72px' }}> {/* Removido hide-scrollbar */}
+      <header className="fixed top-0 left-0 right-0 w-full bg-card shadow-sm py-4 flex items-center justify-between z-50">
+        <div className="container mx-auto flex items-center justify-between px-4">
           {/* Placeholder vazio para equilibrar o layout no desktop */}
-          <div className="hidden md:block w-24"></div> {/* Largura aproximada dos ícones sociais */}
+          <div className="hidden md:block w-24"></div>
           
           {/* Navigation Links (Desktop) - Centralizado */}
           <nav className="hidden md:flex flex-grow justify-center">
@@ -38,7 +38,7 @@ const Index: React.FC = () => {
           </nav>
 
           {/* Redes Sociais no cabeçalho para desktop - Alinhado à direita */}
-          <div className="hidden md:flex items-center space-x-4 w-24 justify-end"> {/* Definindo largura e justify-end para alinhar à direita */}
+          <div className="hidden md:flex items-center space-x-4 w-24 justify-end">
             <a
               href="https://instagram.com/anapaisarquitetura"
               target="_blank"
