@@ -17,7 +17,7 @@ const WhatsAppButton: React.FC = () => {
         className="rounded-full w-20 h-20 flex items-center justify-center shadow-lg bg-brand-color hover:bg-brand-color-600 transition-colors duration-300"
         aria-label="Fale conosco pelo WhatsApp"
       >
-        <MessageCircle className="h-12 w-12 text-white" /> {/* Aumentado para h-12 w-12 */}
+        <MessageCircle className="h-16 w-16 text-white" /> {/* Aumentado para h-16 w-16 */}
       </Button>
     </a>
   );
