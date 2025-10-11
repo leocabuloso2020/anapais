@@ -105,9 +105,9 @@
 }
 
 @layer base {
-  html, body { /* Adicionado html para garantir que a largura seja 100% */
-    width: 100%;
-    max-width: 100%; /* Garante que não exceda a largura da viewport */
+  html, body {
+    width: 100vw; /* Usando 100vw para garantir que a largura seja exatamente a da viewport */
+    max-width: 100vw; /* Garante que não exceda a largura da viewport */
     overflow-x: hidden; /* Previne rolagem horizontal */
   }
 
@@ -116,9 +116,8 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans; /* Aplicando a fonte Caviar Dreams como padrão */
-    position: relative; /* Necessário para o pseudo-elemento */
-    /* overflow-x: hidden; Removido daqui pois já está em html, body */
+    @apply bg-background text-foreground font-sans;
+    position: relative;
   }
 
   body::before {
@@ -130,10 +129,10 @@
     height: 100%;
     pointer-events: none;
     z-index: -1;
-    opacity: 0.05; /* Opacidade baixa para um efeito sutil */
+    opacity: 0.05;
     background-image: radial-gradient(circle, rgba(0,0,0,0.1) 1px, transparent 1px);
-    background-size: 2px 2px; /* Tamanho dos "grãos" */
-    animation: grain-animation 10s infinite linear; /* Animação de movimento */
+    background-size: 2px 2px;
+    animation: grain-animation 10s infinite linear;
   }
 }
 
@@ -188,27 +187,26 @@
 @keyframes fade-in-from-right {
   0% {
     opacity: 0;
-    transform: translateX(50px); /* Começa 50px à direita */
+    transform: translateX(50px);
   }
   100% {
     opacity: 1;
-    transform: translateX(0); /* Termina na posição original */
+    transform: translateX(0);
   }
 }
 
 @layer utilities {
   .animate-fade-in-from-right {
-    animation: fade-in-from-right 1s ease-out forwards; /* Aplica a animação */
+    animation: fade-in-from-right 1s ease-out forwards;
   }
 
   /* Estilos para esconder a barra de rolagem */
   .hide-scrollbar {
-    /* Para Webkit (Chrome, Safari) */
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 
   .hide-scrollbar::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
+    display: none;
   }
 }

@@ -7,17 +7,18 @@ const HeroSection: React.FC = () => {
   const whatsappNumber = "5531993221301"; 
 
   return (
-    <section className="relative w-full min-h-[calc(100vh+250px)] bg-background flex items-center justify-center text-center overflow-hidden"> {/* Removido overflow-x-hidden redundante aqui */}
+    <section className="relative w-full min-h-[calc(100vh+250px)] bg-background flex items-center justify-center text-center overflow-hidden">
       {/* Contêiner para a imagem de fundo com overflow: hidden */}
       <div className="absolute inset-0 w-full h-full overflow-hidden">
         <img
           src="/bg.jpg" // Usando a nova imagem bg.jpg
           alt="Ambiente arquitetônico elegante"
-          className="w-full h-full object-cover animate-[background-zoom-pan_30s_ease-in-out_infinite_alternate]" 
+          // Tornando a imagem ligeiramente maior e centralizando-a para garantir que o overflow: hidden a corte corretamente
+          className="absolute w-[110%] h-[110%] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 object-cover animate-[background-zoom-pan_30s_ease-in-out_infinite_alternate]" 
         />
       </div>
       {/* Overlay com opacidade ajustada para tornar a imagem de fundo mais transparente */}
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent"></div> {/* Opacidade do overlay ajustada para 50% */}
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent"></div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 flex flex-col items-center"> 
         <div className="mb-8 animate-fade-in-up"> 
