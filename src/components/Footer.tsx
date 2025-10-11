@@ -4,7 +4,7 @@ import { Instagram, Facebook, MapPin, Mail, Phone } from "lucide-react";
 const Footer: React.FC = () => {
   return (
     <footer className="bg-footer-background text-gray-300 py-8">
-      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8"> {/* Removido px-4 */}
         {/* Logo/Branding */}
         <div className="col-span-full md:col-span-1 text-center md:text-left mb-6 md:mb-0">
           <h3 className="text-2xl font-bold text-white mb-2">

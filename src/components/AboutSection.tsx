@@ -8,7 +8,7 @@ const AboutSection: React.FC = () => {
 
   return (
     <section ref={ref} className="py-16 bg-background min-h-[calc(100vh-72px)] flex items-center">
-      <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"> {/* Removido px-4 */}
         <div className="lg:order-2 flex justify-center">
           <div className={`relative w-full max-w-md h-[400px] rounded-lg shadow-xl overflow-hidden ${inView ? "animate-fade-in-from-right" : "opacity-0 translate-x-12"}`}> {/* Reaplicando a classe de animação */}
             <img
