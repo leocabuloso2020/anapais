@@ -1,27 +1,23 @@
 import React from "react";
-import { useInView } from "@/hooks/use-in-view";
-import ImageCarousel from "@/components/ImageCarousel"; // Importando o novo componente
+import { useInView } from "@/hooks/use-in-view"; // Mantendo o import, mas não usando a lógica de inView para a imagem aqui
+import ImageCarousel from "@/components/ImageCarousel"; // Removendo o uso do ImageCarousel aqui
 
 const AboutSection: React.FC = () => {
-  const [ref, inView] = useInView({
-    threshold: 0.3, // A animação será ativada quando 30% da seção estiver visível
-  });
-
-  // URLs das imagens para o carrossel (agora usando as imagens que você enviou)
-  const carouselImages = [
-    "/img01.jpg",
-    "/img02.jpg",
-    "/img03.jpg",
-    "/img04.jpg",
-  ];
+  // O hook useInView não será mais usado para a imagem nesta seção, mas pode ser útil para outros elementos se necessário.
+  // Por simplicidade, vou remover a lógica de inView para a imagem aqui.
+  const [ref] = useInView({ threshold: 0.3 }); // Mantendo o ref para a seção, caso queira animar o texto, por exemplo.
 
   return (
     <section ref={ref} className="py-16 bg-background min-h-[calc(100vh-72px)] flex items-center">
       <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="lg:order-2 flex justify-center">
-          <div className={`relative w-full max-w-md h-[400px] rounded-lg shadow-xl overflow-hidden ${inView ? "animate-fade-in-from-right" : "opacity-0 translate-x-12"}`}>
-            <ImageCarousel images={carouselImages} altText="Projetos de Arquitetura" />
-            {/* O overlay com gradiente de transparência foi movido para dentro do ImageCarousel se necessário, ou pode ser removido se o carrossel já tiver um bom visual */}
+          <div className="relative w-full max-w-md h-[400px] rounded-lg shadow-xl overflow-hidden"> {/* Removendo a classe de animação */}
+            <img
+              src="/sobre.png" // Voltando para a imagem original
+              alt="Ana Pais Arquitetura"
+              className="w-full h-full object-cover"
+            />
+            {/* Removendo o overlay de gradiente se não for mais necessário */}
           </div>
         </div>
         <div className="lg:order-1 text-center lg:text-left">

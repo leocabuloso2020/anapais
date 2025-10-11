@@ -1,5 +1,7 @@
 import React from "react";
 import { Lightbulb, Handshake, CheckCircle, Sparkles } from "lucide-react";
+import { useInView } from "@/hooks/use-in-view"; // Importando o hook useInView
+import ImageCarousel from "@/components/ImageCarousel"; // Importando o componente ImageCarousel
 
 interface StepCardProps {
   icon: React.ElementType;
@@ -16,6 +18,10 @@ const StepCard: React.FC<StepCardProps> = ({ icon: Icon, title, description }) =
 );
 
 const MethodologySection: React.FC = () => {
+  const [ref, inView] = useInView({
+    threshold: 0.3, // A animação será ativada quando 30% da seção estiver visível
+  });
+
   const steps = [
     {
       icon: Handshake,
@@ -43,8 +49,16 @@ const MethodologySection: React.FC = () => {
     },
   ];
 
+  // URLs das imagens para o carrossel (as que você enviou)
+  const carouselImages = [
+    "/img01.jpg",
+    "/img02.jpg",
+    "/img03.jpg",
+    "/img04.jpg",
+  ];
+
   return (
-    <section className="py-16 bg-background min-h-[calc(100vh-72px)] flex flex-col justify-center"> {/* Adicionado min-h-[calc(100vh-72px)] e flex flex-col justify-center */}
+    <section ref={ref} className="py-16 bg-background min-h-[calc(100vh-72px)] flex flex-col justify-center">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
           Beleza com Propósito: Nossa Metodologia
@@ -53,14 +67,9 @@ const MethodologySection: React.FC = () => {
           Acreditamos que a arquitetura vai além das paredes. É sobre transformar
           vidas e criar espaços que inspiram.
         </p>
-        <div className="mt-12 relative w-full h-[400px] overflow-hidden rounded-lg shadow-xl"> {/* Revertido para h-[400px] */}
-          <img
-            src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Processo de trabalho"
-            className="absolute inset-0 w-full h-full object-cover transform scale-105 animate-[background-zoom-pan_30s_ease-in-out_infinite_alternate]"
-          />
-          {/* Overlay com gradiente de transparência adicionado novamente */}
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent"></div>
+        <div className={`mt-12 relative w-full h-[400px] overflow-hidden rounded-lg shadow-xl ${inView ? "animate-fade-in-from-right" : "opacity-0 translate-x-12"}`}> {/* Aplicando a animação aqui */}
+          <ImageCarousel images={carouselImages} altText="Processo de trabalho" />
+          {/* O overlay com gradiente de transparência foi movido para dentro do ImageCarousel se necessário, ou pode ser removido se o carrossel já tiver um bom visual */}
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
           {steps.map((step, index) => (
