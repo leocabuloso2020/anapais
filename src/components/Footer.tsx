@@ -3,7 +3,7 @@ import { Instagram, Facebook, MapPin, Mail, Phone } from "lucide-react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-footer-background text-gray-300 py-8"> {/* Removido min-h-[calc(100vh-72px)] e flex flex-col justify-center */}
+    <footer className="bg-footer-background text-gray-300 py-8">
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Logo/Branding */}
         <div className="col-span-full md:col-span-1 text-center md:text-left mb-6 md:mb-0">
@@ -30,11 +30,7 @@ const Footer: React.FC = () => {
               </a>
             </li>
             {/* Link do Portfólio removido */}
-            <li>
-              <a href="#faq" className="hover:text-brand-color transition-colors">
-                FAQ
-              </a>
-            </li>
+            {/* Link FAQ removido */}
           </ul>
         </div>
 

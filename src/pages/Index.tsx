@@ -3,14 +3,13 @@ import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
 import AboutSection from "@/components/AboutSection";
 import MethodologySection from "@/components/MethodologySection";
-import FAQSection from "@/components/FAQSection";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Footer from "@/components/Footer";
 import MobileNav from "@/components/MobileNav";
 
 const Index: React.FC = () => {
   return (
-    <div className="h-screen overflow-y-scroll scroll-snap-type-y-mandatory" style={{ scrollPaddingTop: '72px' }}> {/* Adicionado scrollPaddingTop */}
+    <div className="h-screen overflow-y-scroll scroll-snap-type-y-mandatory" style={{ scrollPaddingTop: '72px' }}>
       <header className="fixed top-0 left-0 right-0 w-full bg-card shadow-sm py-4 px-6 flex justify-between items-center z-50">
         <div className="text-2xl font-bold text-foreground">
           <a href="/" className="flex items-center">
@@ -30,11 +29,7 @@ const Index: React.FC = () => {
                 Serviços
               </a>
             </li>
-            <li>
-              <a href="#faq" className="text-muted-foreground hover:text-brand-color font-medium transition-colors">
-                FAQ
-              </a>
-            </li>
+            {/* Link FAQ removido */}
             <li>
               <a href="#contact" className="text-muted-foreground hover:text-brand-color font-medium transition-colors">
                 Contato
@@ -48,7 +43,7 @@ const Index: React.FC = () => {
         </div>
       </header>
 
-      {/* Seções de conteúdo principal, agora com wrappers sem h-screen */}
+      {/* Seções de conteúdo principal */}
       <div className="scroll-snap-align-start">
         <HeroSection />
       </div>
@@ -61,14 +56,12 @@ const Index: React.FC = () => {
       <div className="scroll-snap-align-start"> {/* MethodologySection */}
         <MethodologySection />
       </div>
-      <div id="faq" className="scroll-snap-align-start">
-        <FAQSection />
-      </div>
+      {/* FAQSection removido */}
       <div id="contact" className="scroll-snap-align-start">
         <Footer />
       </div>
 
-      <WhatsAppButton /> {/* Este permanece fixo e fora do fluxo de scroll-snap */}
+      <WhatsAppButton />
     </div>
   );
 };
