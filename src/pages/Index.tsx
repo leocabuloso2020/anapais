@@ -6,19 +6,22 @@ import MethodologySection from "@/components/MethodologySection";
 import MethodologyStepsSection from "@/components/MethodologyStepsSection";
 import Footer from "@/components/Footer";
 import MobileNav from "@/components/MobileNav";
+import Logo from "@/components/Logo"; // Importando o componente Logo
 import { Instagram, Facebook } from "lucide-react";
 
 const Index: React.FC = () => {
   return (
     <div className="h-screen w-full max-w-full overflow-y-scroll scroll-snap-type-y-mandatory hide-scrollbar" style={{ scrollPaddingTop: '72px' }}>
-      <header className="fixed top-0 left-0 right-0 w-full bg-card shadow-sm py-4 px-6 flex justify-between items-center z-50">
-        <div className="text-2xl font-bold text-foreground">
+      <header className="fixed top-0 left-0 right-0 w-full bg-card shadow-sm py-4 px-6 flex items-center justify-between z-50">
+        {/* Logo */}
+        <div className="flex-shrink-0"> {/* Garante que o logo não encolha */}
           <a href="/" className="flex items-center">
-            {/* Texto "Ana Pais Arquitetura" removido daqui */}
+            <Logo className="h-10 w-auto" /> {/* Usando o componente Logo com tamanho ajustado para o cabeçalho */}
           </a>
         </div>
         
-        <nav className="hidden md:block">
+        {/* Navigation Links (Desktop) */}
+        <nav className="hidden md:flex flex-grow justify-center"> {/* flex-grow para ocupar espaço e justify-center para centralizar */}
           <ul className="flex space-x-6">
             <li>
               <a href="#about" className="text-muted-foreground hover:text-brand-color font-medium transition-colors">
@@ -39,7 +42,7 @@ const Index: React.FC = () => {
         </nav>
 
         {/* Redes Sociais no cabeçalho para desktop */}
-        <div className="hidden md:flex items-center space-x-4">
+        <div className="hidden md:flex items-center space-x-4 flex-shrink-0"> {/* Garante que os ícones sociais não encolham */}
           <a
             href="https://instagram.com/anapaisarquitetura"
             target="_blank"
