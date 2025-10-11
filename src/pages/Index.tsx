@@ -11,10 +11,12 @@ import { Instagram, Facebook } from "lucide-react";
 const Index: React.FC = () => {
   return (
     <div className="h-screen w-full max-w-full overflow-y-scroll scroll-snap-type-y-mandatory hide-scrollbar" style={{ scrollPaddingTop: '72px' }}>
-      <header className="fixed top-0 left-0 right-0 w-full bg-card shadow-sm py-4 px-6 flex items-center justify-end md:justify-between z-50"> {/* Ajustado para justify-end em mobile e justify-between em desktop */}
+      <header className="fixed top-0 left-0 right-0 w-full bg-card shadow-sm py-4 px-6 flex items-center justify-between z-50">
+        {/* Placeholder vazio para equilibrar o layout no desktop */}
+        <div className="hidden md:block w-24"></div> {/* Largura aproximada dos ícones sociais */}
         
-        {/* Navigation Links (Desktop) */}
-        <nav className="hidden md:flex"> {/* Este será empurrado para a esquerda pelo justify-between */}
+        {/* Navigation Links (Desktop) - Centralizado */}
+        <nav className="hidden md:flex flex-grow justify-center">
           <ul className="flex space-x-6">
             <li>
               <a href="#about" className="text-muted-foreground hover:text-brand-color font-medium transition-colors">
@@ -34,8 +36,8 @@ const Index: React.FC = () => {
           </ul>
         </nav>
 
-        {/* Redes Sociais no cabeçalho para desktop */}
-        <div className="hidden md:flex items-center space-x-4"> {/* Este será empurrado para a direita pelo justify-between */}
+        {/* Redes Sociais no cabeçalho para desktop - Alinhado à direita */}
+        <div className="hidden md:flex items-center space-x-4 w-24 justify-end"> {/* Definindo largura e justify-end para alinhar à direita */}
           <a
             href="https://instagram.com/anapaisarquitetura"
             target="_blank"
@@ -56,7 +58,7 @@ const Index: React.FC = () => {
           </a>
         </div>
 
-        <div className="md:hidden"> {/* Mantido para mobile, sem posicionamento absoluto aqui */}
+        <div className="md:hidden">
           <MobileNav />
         </div>
       </header>
