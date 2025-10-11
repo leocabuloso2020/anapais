@@ -1,11 +1,16 @@
 import React from "react";
+import { useInView } from "@/hooks/use-in-view"; // Importando o novo hook
 
 const AboutSection: React.FC = () => {
+  const [ref, inView] = useInView({
+    threshold: 0.3, // A animação será ativada quando 30% da seção estiver visível
+  });
+
   return (
-    <section className="py-16 bg-background min-h-[calc(100vh-72px)] flex items-center">
+    <section ref={ref} className="py-16 bg-background min-h-[calc(100vh-72px)] flex items-center">
       <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="lg:order-2 flex justify-center">
-          <div className="relative w-full max-w-md h-[400px] rounded-lg shadow-xl overflow-hidden animate-fade-in-from-right"> {/* Adicionado animate-fade-in-from-right */}
+          <div className={`relative w-full max-w-md h-[400px] rounded-lg shadow-xl overflow-hidden ${inView ? "animate-fade-in-from-right" : "opacity-0 translate-x-12"}`}> {/* Aplicando a classe condicionalmente */}
             <img
               src="/sobre.png" // Caminho atualizado para a imagem que você adicionou
               alt="Ana Pais Arquitetura"
