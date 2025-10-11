@@ -106,16 +106,17 @@
 
 @layer base {
   html {
-    overflow-x: hidden; /* Reativado */
+    /* Removendo overflow-x: hidden para diagnóstico */
   }
   body {
-    overflow-x: hidden; /* Reativado */
+    /* Removendo overflow-x: hidden para diagnóstico */
     @apply bg-background text-foreground font-sans;
     position: relative;
   }
 
+  /* Adicionando borda vermelha a todos os elementos para diagnóstico */
   * {
-    @apply border-border;
+    border: 1px solid red !important;
   }
 
   body::before {
