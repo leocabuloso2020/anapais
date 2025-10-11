@@ -6,6 +6,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay"; // Importando o plugin de autoplay
 
 interface ImageCarouselProps {
   images: string[];
@@ -13,12 +14,21 @@ interface ImageCarouselProps {
 }
 
 const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, altText }) => {
+  const plugin = React.useRef(
+    Autoplay({ delay: 5000, stopOnInteraction: false }) // Configura o autoplay para 5 segundos e não para ao interagir
+  );
+
   return (
-    <Carousel className="w-full h-full">
+    <Carousel
+      plugins={[plugin.current]} // Aplica o plugin de autoplay
+      className="w-full h-full"
+      opts={{
+        loop: true, // Garante que o carrossel irá repetir as imagens
+      }}
+    >
       <CarouselContent>
         {images.map((imageSrc, index) => (
           <CarouselItem key={index}>
-            {/* Removido o div com p-1 para que a imagem preencha o CarouselItem diretamente */}
             <img
               src={imageSrc}
               alt={`${altText} ${index + 1}`}
