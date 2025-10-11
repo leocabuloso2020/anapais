@@ -33,7 +33,7 @@ const FAQSection: React.FC = () => {
   return (
     <section className="py-16 bg-background">
       <div className="container mx-auto px-4 text-center max-w-3xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8"> {/* Alterado mb-12 para mb-8 */}
           Perguntas Frequentes
         </h2>
         <Accordion type="single" collapsible className="w-full">
