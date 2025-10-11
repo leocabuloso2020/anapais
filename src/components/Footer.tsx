@@ -75,7 +75,7 @@ const Footer: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
-              className="hover:text-brand-color transition-colors"
+              className="text-muted-foreground hover:text-brand-color transition-colors"
             >
               <Facebook className="h-6 w-6" />
             </a>
@@ -83,7 +83,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <div className="mt-12 border-t border-gray-700 pt-8 text-center text-sm text-gray-500">
-        <p className="whitespace-nowrap">
+        <p className=""> {/* Removido whitespace-nowrap */}
           Desenvolvido por{" "}
           <a
             href="https://wa.me/5531993305095"
