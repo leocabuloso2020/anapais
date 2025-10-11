@@ -105,19 +105,19 @@
 }
 
 @layer base {
-  html, body {
-    width: 100vw; /* Usando 100vw para garantir que a largura seja exatamente a da viewport */
-    max-width: 100vw; /* Garante que não exceda a largura da viewport */
-    overflow-x: hidden; /* Previne rolagem horizontal */
+  html {
+    /* Removido width: 100vw e max-width: 100vw */
+    overflow-x: hidden; /* Mantido para garantir que o html não crie rolagem horizontal */
+  }
+  body {
+    /* Removido width: 100vw e max-width: 100vw */
+    overflow-x: hidden; /* Mantido para garantir que o body não crie rolagem horizontal */
+    @apply bg-background text-foreground font-sans;
+    position: relative;
   }
 
   * {
     @apply border-border;
-  }
-
-  body {
-    @apply bg-background text-foreground font-sans;
-    position: relative;
   }
 
   body::before {
