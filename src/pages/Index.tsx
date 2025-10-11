@@ -10,7 +10,7 @@ import MobileNav from "@/components/MobileNav";
 
 const Index: React.FC = () => {
   return (
-    <div className="h-screen overflow-y-scroll scroll-snap-type-y-mandatory">
+    <div className="h-screen overflow-y-scroll scroll-snap-type-y-mandatory" style={{ scrollPaddingTop: '72px' }}> {/* Adicionado scrollPaddingTop */}
       <header className="fixed top-0 left-0 right-0 w-full bg-card shadow-sm py-4 px-6 flex justify-between items-center z-50">
         <div className="text-2xl font-bold text-foreground">
           <a href="/" className="flex items-center">
@@ -50,8 +50,8 @@ const Index: React.FC = () => {
       </header>
 
       {/* Seções de conteúdo principal, cada uma se encaixando na tela cheia */}
-      {/* O pt-[72px] na primeira seção compensa a altura do cabeçalho fixo */}
-      <div className="h-screen scroll-snap-align-start pt-[72px]">
+      {/* Removido pt-[72px] das divs das seções, pois scroll-padding-top no pai já resolve */}
+      <div className="h-screen scroll-snap-align-start">
         <HeroSection />
       </div>
       <div id="services" className="h-screen scroll-snap-align-start">
