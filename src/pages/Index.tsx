@@ -12,7 +12,7 @@ const Index: React.FC = () => {
   return (
     <div className="h-screen w-full max-w-full overflow-y-scroll scroll-snap-type-y-mandatory hide-scrollbar" style={{ scrollPaddingTop: '72px' }}>
       <header className="fixed top-0 left-0 right-0 w-full bg-card shadow-sm py-4 flex items-center justify-between z-50"> {/* Removido px-6 do header */}
-        <div className="container mx-auto flex items-center justify-between"> {/* Adicionado container mx-auto para gerenciar padding interno */}
+        <div className="container mx-auto flex items-center justify-between px-4"> {/* Adicionado px-4 aqui */}
           {/* Placeholder vazio para equilibrar o layout no desktop */}
           <div className="hidden md:block w-24"></div> {/* Largura aproximada dos ícones sociais */}
           

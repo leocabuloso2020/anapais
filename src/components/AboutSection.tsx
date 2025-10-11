@@ -8,9 +8,9 @@ const AboutSection: React.FC = () => {
 
   return (
     <section ref={ref} className="py-16 bg-background min-h-[calc(100vh-72px)] flex items-center">
-      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-4"> {/* Adicionado px-4 aqui */}
         <div className="lg:order-2 flex justify-center">
-          <div className={`relative w-full max-w-md h-[400px] rounded-lg shadow-xl overflow-hidden ${inView ? "animate-fade-in-from-right" : "opacity-0"}`}> {/* Removido translate-x-12 */}
+          <div className={`relative w-full max-w-md h-[400px] rounded-lg shadow-xl overflow-hidden ${inView ? "animate-fade-in-from-right" : "opacity-0"}`}>
             <img
               src="/sobre.png"
               alt="Ana Pais Arquitetura"
