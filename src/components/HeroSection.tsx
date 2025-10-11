@@ -8,11 +8,11 @@ const HeroSection: React.FC = () => {
 
   return (
     <section className="relative w-full min-h-[calc(100vh+250px)] bg-background flex items-center justify-center text-center overflow-hidden"> {/* Aumentado min-h para ser ainda maior que a tela */}
-      {/* Imagem de fundo sem efeito de zoom e movimento */}
+      {/* Imagem de fundo com efeito de zoom e movimento */}
       <img
         src="/bg.jpg" // Usando a nova imagem bg.jpg
         alt="Ambiente arquitetônico elegante"
-        className="absolute inset-0 w-full h-full object-cover" 
+        className="absolute inset-0 w-full h-full object-cover animate-[background-zoom-pan_30s_ease-in-out_infinite_alternate]" 
       />
       {/* Overlay com opacidade ajustada para tornar a imagem de fundo mais transparente */}
       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent"></div> {/* Opacidade do overlay ajustada para 50% */}
