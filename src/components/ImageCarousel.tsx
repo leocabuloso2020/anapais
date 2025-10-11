@@ -18,13 +18,12 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, altText }) => {
       <CarouselContent>
         {images.map((imageSrc, index) => (
           <CarouselItem key={index}>
-            <div className="p-1">
-              <img
-                src={imageSrc}
-                alt={`${altText} ${index + 1}`}
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </div>
+            {/* Removido o div com p-1 para que a imagem preencha o CarouselItem diretamente */}
+            <img
+              src={imageSrc}
+              alt={`${altText} ${index + 1}`}
+              className="w-full h-full object-cover rounded-lg"
+            />
           </CarouselItem>
         ))}
       </CarouselContent>
