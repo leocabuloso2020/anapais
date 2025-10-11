@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import WhatsAppButton from "@/components/WhatsAppButton"; // Importando o WhatsAppButton
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
+      <WhatsAppButton /> {/* Adicionando o WhatsAppButton aqui, fora do BrowserRouter */}
     </TooltipProvider>
   </QueryClientProvider>
 );
