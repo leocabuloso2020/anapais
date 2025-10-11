@@ -4,7 +4,7 @@ import { Instagram, Facebook, MapPin, Mail, Phone } from "lucide-react";
 const Footer: React.FC = () => {
   return (
     <footer className="bg-footer-background text-gray-300 py-8">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8"> {/* px-4 removido daqui, agora vem do tailwind.config.ts */}
         {/* Logo/Branding */}
         <div className="col-span-full md:col-span-1 text-center md:text-left mb-6 md:mb-0">
           <h3 className="text-2xl font-bold text-white mb-2">
@@ -82,7 +82,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="mt-12 border-t border-gray-700 pt-8 text-center text-sm text-gray-500">
+      <div className="mt-12 border-t border-gray-700 pt-8 text-center text-sm text-gray-500 px-4"> {/* px-4 reativado aqui */}
         <p className="">
           Desenvolvido por{" "}
           <a

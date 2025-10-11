@@ -106,10 +106,10 @@
 
 @layer base {
   html {
-    overflow-x: hidden; /* Reativado */
+    /* overflow-x: hidden; */ /* Comentado novamente */
   }
   body {
-    overflow-x: hidden; /* Reativado */
+    /* overflow-x: hidden; */ /* Comentado novamente */
     @apply bg-background text-foreground font-sans;
     position: relative;
   }
