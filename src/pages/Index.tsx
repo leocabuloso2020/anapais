@@ -6,6 +6,7 @@ import MethodologySection from "@/components/MethodologySection";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Footer from "@/components/Footer";
 import MobileNav from "@/components/MobileNav";
+import { Instagram, Facebook } from "lucide-react"; // Importando os ícones
 
 const Index: React.FC = () => {
   return (
@@ -29,7 +30,6 @@ const Index: React.FC = () => {
                 Serviços
               </a>
             </li>
-            {/* Link FAQ removido */}
             <li>
               <a href="#contact" className="text-muted-foreground hover:text-brand-color font-medium transition-colors">
                 Contato
@@ -37,6 +37,28 @@ const Index: React.FC = () => {
             </li>
           </ul>
         </nav>
+
+        {/* Redes Sociais no cabeçalho para desktop */}
+        <div className="hidden md:flex items-center space-x-4">
+          <a
+            href="https://instagram.com/anapaisarquitetura"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            className="text-muted-foreground hover:text-brand-color transition-colors"
+          >
+            <Instagram className="h-6 w-6" />
+          </a>
+          <a
+            href="https://facebook.com/anapaisarquitetura"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            className="text-muted-foreground hover:text-brand-color transition-colors"
+          >
+            <Facebook className="h-6 w-6" />
+          </a>
+        </div>
 
         <div className="md:hidden">
           <MobileNav />
@@ -56,7 +78,6 @@ const Index: React.FC = () => {
       <div className="scroll-snap-align-start"> {/* MethodologySection */}
         <MethodologySection />
       </div>
-      {/* FAQSection removido */}
       <div id="contact" className="scroll-snap-align-start">
         <Footer />
       </div>
