@@ -7,16 +7,13 @@ const HeroSection: React.FC = () => {
   const whatsappNumber = "5531993221301"; 
 
   return (
-    <section className="relative w-full min-h-[calc(100vh+250px)] bg-background flex items-center justify-center text-center overflow-hidden">
-      {/* Contêiner para a imagem de fundo com overflow: hidden */}
-      <div className="absolute inset-0 w-full h-full overflow-hidden">
-        <img
-          src="/bg.jpg" // Usando a nova imagem bg.jpg
-          alt="Ambiente arquitetônico elegante"
-          // Tornando a imagem ligeiramente maior e centralizando-a para garantir que o overflow: hidden a corte corretamente
-          className="absolute w-[110%] h-[110%] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 object-cover animate-[background-zoom-pan_30s_ease-in-out_infinite_alternate]" 
-        />
-      </div>
+    <section className="relative w-full h-[70vh] md:h-[80vh] bg-background flex items-center justify-center text-center overflow-hidden"> {/* Altura ajustada para h-[70vh] md:h-[80vh] */}
+      {/* Imagem de fundo com efeito de zoom e movimento */}
+      <img
+        src="/bg.jpg" // Usando a nova imagem bg.jpg
+        alt="Ambiente arquitetônico elegante"
+        className="absolute inset-0 w-full h-full object-cover transform scale-105 animate-[background-zoom-pan_30s_ease-in-out_infinite_alternate]" 
+      />
       {/* Overlay com opacidade ajustada para tornar a imagem de fundo mais transparente */}
       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent"></div>
 
@@ -38,7 +35,6 @@ const HeroSection: React.FC = () => {
           >
             Quero transformar meu ambiente
           </Button>
-          {/* Botão "Fale agora no WhatsApp" removido */}
         </div>
       </div>
     </section>
