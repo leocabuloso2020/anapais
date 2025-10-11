@@ -11,9 +11,10 @@ import { Instagram, Facebook } from "lucide-react";
 const Index: React.FC = () => {
   return (
     <div className="h-screen w-full max-w-full overflow-y-scroll scroll-snap-type-y-mandatory hide-scrollbar" style={{ scrollPaddingTop: '72px' }}>
-      <header className="fixed top-0 left-0 right-0 w-full bg-card shadow-sm py-4 px-6 flex items-center justify-center z-50"> {/* Alterado para justify-center no desktop */}
+      <header className="fixed top-0 left-0 right-0 w-full bg-card shadow-sm py-4 px-6 flex items-center justify-end md:justify-between z-50"> {/* Ajustado para justify-end em mobile e justify-between em desktop */}
+        
         {/* Navigation Links (Desktop) */}
-        <nav className="hidden md:flex"> {/* Removido flex-grow e justify-center daqui */}
+        <nav className="hidden md:flex"> {/* Este será empurrado para a esquerda pelo justify-between */}
           <ul className="flex space-x-6">
             <li>
               <a href="#about" className="text-muted-foreground hover:text-brand-color font-medium transition-colors">
@@ -34,7 +35,7 @@ const Index: React.FC = () => {
         </nav>
 
         {/* Redes Sociais no cabeçalho para desktop */}
-        <div className="absolute right-6 hidden md:flex items-center space-x-4"> {/* Posicionado absolutamente à direita */}
+        <div className="hidden md:flex items-center space-x-4"> {/* Este será empurrado para a direita pelo justify-between */}
           <a
             href="https://instagram.com/anapaisarquitetura"
             target="_blank"
@@ -55,7 +56,7 @@ const Index: React.FC = () => {
           </a>
         </div>
 
-        <div className="md:hidden absolute right-6"> {/* Mantido para mobile, ajustado para absolute right-6 */}
+        <div className="md:hidden"> {/* Mantido para mobile, sem posicionamento absoluto aqui */}
           <MobileNav />
         </div>
       </header>
