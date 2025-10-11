@@ -3,10 +3,11 @@ import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
 import AboutSection from "@/components/AboutSection";
 import MethodologySection from "@/components/MethodologySection";
+import MethodologyStepsSection from "@/components/MethodologyStepsSection"; // Importando o novo componente
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Footer from "@/components/Footer";
 import MobileNav from "@/components/MobileNav";
-import { Instagram, Facebook } from "lucide-react"; // Importando os ícones
+import { Instagram, Facebook } from "lucide-react";
 
 const Index: React.FC = () => {
   return (
@@ -75,8 +76,11 @@ const Index: React.FC = () => {
       <div id="about" className="scroll-snap-align-start">
         <AboutSection />
       </div>
-      <div className="scroll-snap-align-start"> {/* MethodologySection */}
+      <div className="scroll-snap-align-start">
         <MethodologySection />
+      </div>
+      <div className="scroll-snap-align-start"> {/* Nova seção para os passos da metodologia */}
+        <MethodologyStepsSection />
       </div>
       <div id="contact" className="scroll-snap-align-start">
         <Footer />
