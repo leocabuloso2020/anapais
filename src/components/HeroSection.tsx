@@ -7,7 +7,7 @@ const HeroSection: React.FC = () => {
   const whatsappNumber = "5531993221301"; 
 
   return (
-    <section className="relative h-[70vh] md:h-[80vh] bg-background flex items-center justify-center text-center overflow-hidden">
+    <section className="relative w-full h-full bg-background flex items-center justify-center text-center overflow-hidden"> {/* Removido h-[70vh] md:h-[80vh], adicionado h-full */}
       {/* Imagem de fundo com efeito de zoom e movimento */}
       <img
         src="/bg.jpg" // Usando a nova imagem bg.jpg
