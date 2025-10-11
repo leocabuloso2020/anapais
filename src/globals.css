@@ -140,31 +140,31 @@
     transform: translate(0, 0);
   }
   10% {
-    transform: translate(5%, 10%); /* Ajustado para mover dentro da área de 120% */
+    transform: translate(2vw, 3vh); /* Ajustado para usar vw e vh com valores menores */
   }
   20% {
-    transform: translate(15%, -5%);
+    transform: translate(4vw, -2vh);
   }
   30% {
-    transform: translate(-7%, 25%);
+    transform: translate(-3vw, 5vh);
   }
   40% {
-    transform: translate(5%, -25%);
+    transform: translate(2vw, -5vh);
   }
   50% {
-    transform: translate(15%, -10%);
+    transform: translate(4vw, -3vh);
   }
   60% {
-    transform: translate(-20%, 5%);
+    transform: translate(-5vw, 2vh);
   }
   70% {
-    transform: translate(10%, 20%);
+    transform: translate(3vw, 5vh);
   }
   80% {
-    transform: translate(-5%, -15%);
+    transform: translate(-2vw, -4vh);
   }
   90% {
-    transform: translate(20%, 5%);
+    transform: translate(5vw, 2vh);
   }
   100% {
     transform: translate(0, 0);
