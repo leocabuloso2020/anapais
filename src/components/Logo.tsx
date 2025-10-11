@@ -5,7 +5,7 @@ const Logo: React.FC = () => {
     <img
       src="/logo.svg" // O arquivo logo.svg na pasta 'public' foi atualizado
       alt="Ana Pais Arquitetura Logo"
-      className="h-[22.4rem] w-auto" // Nenhuma classe de filtro de cor é necessária, pois o SVG já é branco
+      className="h-[18rem] w-auto" // Tamanho ajustado para ser um pouco menor
     />
   );
 };
