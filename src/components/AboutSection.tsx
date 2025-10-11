@@ -1,23 +1,27 @@
 import React from "react";
-import { useInView } from "@/hooks/use-in-view"; // Importando o novo hook
+import { useInView } from "@/hooks/use-in-view";
+import ImageCarousel from "@/components/ImageCarousel"; // Importando o novo componente
 
 const AboutSection: React.FC = () => {
   const [ref, inView] = useInView({
     threshold: 0.3, // A animação será ativada quando 30% da seção estiver visível
   });
 
+  // URLs das imagens para o carrossel
+  const carouselImages = [
+    "/sobre.png", // Sua imagem original
+    "https://images.unsplash.com/photo-1583847268964-dd285dc668d8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1567016376408-0226e4d7c12f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1556912167-f556f1f39195?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  ];
+
   return (
     <section ref={ref} className="py-16 bg-background min-h-[calc(100vh-72px)] flex items-center">
       <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="lg:order-2 flex justify-center">
-          <div className={`relative w-full max-w-md h-[400px] rounded-lg shadow-xl overflow-hidden ${inView ? "animate-fade-in-from-right" : "opacity-0 translate-x-12"}`}> {/* Aplicando a classe condicionalmente */}
-            <img
-              src="/sobre.png" // Caminho atualizado para a imagem que você adicionou
-              alt="Ana Pais Arquitetura"
-              className="w-full h-full object-cover" // Ajustado para h-full para preencher o contêiner
-            />
-            {/* Overlay com gradiente de transparência invertido para da direita para a esquerda */}
-            <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-background"></div>
+          <div className={`relative w-full max-w-md h-[400px] rounded-lg shadow-xl overflow-hidden ${inView ? "animate-fade-in-from-right" : "opacity-0 translate-x-12"}`}>
+            <ImageCarousel images={carouselImages} altText="Projetos de Arquitetura" />
+            {/* O overlay com gradiente de transparência foi movido para dentro do ImageCarousel se necessário, ou pode ser removido se o carrossel já tiver um bom visual */}
           </div>
         </div>
         <div className="lg:order-1 text-center lg:text-left">
