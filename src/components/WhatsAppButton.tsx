@@ -14,10 +14,10 @@ const WhatsAppButton: React.FC = () => {
       className="fixed bottom-6 right-6 z-50"
     >
       <Button
-        className="rounded-full w-20 h-20 flex items-center justify-center shadow-lg bg-brand-color hover:bg-brand-color-600 transition-colors duration-300 text-[0px]" // Botão de volta para w-20 h-20 (80px)
+        className="rounded-full w-20 h-20 flex items-center justify-center shadow-lg bg-brand-color hover:bg-brand-color-600 transition-colors duration-300 text-[0px]" // Botão permanece w-20 h-20
         aria-label="Fale conosco pelo WhatsApp"
       >
-        <MessageCircle width="56" height="56" className="text-white !w-[56px] !h-[56px]" /> {/* Ícone branco ajustado para 56px */}
+        <MessageCircle width="24" height="24" className="text-white !w-[24px] !h-[24px]" /> {/* Ícone branco ajustado para 24px */}
       </Button>
     </a>
   );
