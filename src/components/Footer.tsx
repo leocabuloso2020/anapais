@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
             {/* Ana Pais Arquitetura */}
           </h3>
           <p className="text-sm">
-            Transformando ambientes em refúgios de bem-estar.
+            Projetos com propósito e sensibilidade
           </p>
         </div>
 
