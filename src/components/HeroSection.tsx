@@ -22,7 +22,7 @@ const HeroSection: React.FC = () => {
           <Logo />
         </div>
         <h1 className="text-4xl md:text-6xl font-light text-foreground leading-tight mb-4 animate-fade-in-up">
-          Ame sua casa. Transforme seu ambiente em um refúgio.
+          Projetos com propósito e sensibilidade
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground mb-8 animate-fade-in-up delay-100">
           Criamos espaços que refletem sua identidade, promovem bem-estar e
