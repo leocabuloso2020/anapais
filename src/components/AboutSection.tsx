@@ -14,7 +14,7 @@ const AboutSection: React.FC = () => {
           <div className="lg:order-2 flex justify-center">
             <div className={`relative w-full max-w-md h-[400px] rounded-lg shadow-xl overflow-hidden ${inView ? "animate-fade-in-from-right" : "opacity-0"}`}>
               <img
-                src="/foto%20ana%202.png"
+                src="/ana.png"
                 alt="Ana Pais Arquitetura"
                 className="w-full h-full object-cover"
               />
