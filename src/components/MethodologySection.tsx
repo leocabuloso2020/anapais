@@ -2,18 +2,25 @@ import React from "react";
 import { useInView } from "@/hooks/use-in-view";
 import ImageCarousel from "@/components/ImageCarousel";
 
+// Importando as imagens diretamente para garantir que sejam encontradas
+import image1 from "/01.jpg";
+import image2 from "/02.jpg";
+import image3 from "/03.jpg";
+import image4 from "/04.jpg";
+import image5 from "/05.jpg";
+
 const MethodologySection: React.FC = () => {
   const [ref, inView] = useInView({
     threshold: 0.3, // A animação será ativada quando 30% da seção estiver visível
   });
 
-  // URLs das imagens para o carrossel (agora com 5 imagens)
+  // Array com as imagens importadas
   const carouselImages = [
-    "/01.jpg",
-    "/02.jpg",
-    "/03.jpg",
-    "/04.jpg",
-    "/05.jpg",
+    image1,
+    image2,
+    image3,
+    image4,
+    image5,
   ];
 
   return (
