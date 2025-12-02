@@ -19,6 +19,14 @@ const MethodologySection: React.FC = () => {
   return (
     <section ref={ref} className="py-16 bg-background min-h-[calc(100vh-72px)] flex items-center">
       <div className="container mx-auto text-center"> {/* Removido px-4 */}
+        
+        {/* Bloco de Teste Definitivo */}
+        <div className="border-4 border-red-500 p-4 mb-8">
+          <p className="text-white mb-2">BLOCO DE TESTE: Se a imagem não aparecer abaixo, o arquivo /01.jpg não está sendo encontrado.</p>
+          <img src="/01.jpg" alt="Teste de imagem 01" className="w-48 h-48 mx-auto border-2 border-white" />
+        </div>
+        {/* Fim do Bloco de Teste */}
+
         <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
           Beleza com Propósito: Nossa Metodologia
         </h2>
