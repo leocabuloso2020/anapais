@@ -49,7 +49,7 @@ const Index: React.FC = () => {
               <Instagram className="h-6 w-6" />
             </a>
             <a
-              href="https://facebook.com/anapaisarquitetura"
+              href="https://www.facebook.com/profile.php?id=61578676634206"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
