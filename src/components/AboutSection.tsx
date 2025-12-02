@@ -9,13 +9,13 @@ const AboutSection: React.FC = () => {
   return (
     <section ref={ref} className="py-16 bg-background">
       <div className="container mx-auto space-y-24">
-        {/* Perfil Ana Pais */}
+        {/* Perfil Ana Cláudia Pais */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="lg:order-2 flex justify-center">
             <div className={`relative w-full max-w-md h-[400px] rounded-lg shadow-xl overflow-hidden ${inView ? "animate-fade-in-from-right" : "opacity-0"}`}>
               <img
                 src="/sobre.png"
-                alt="Ana Pais Arquitetura"
+                alt="Ana Cláudia Pais Arquiteta"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-background"></div>
@@ -23,7 +23,7 @@ const AboutSection: React.FC = () => {
           </div>
           <div className="lg:order-1 text-center lg:text-left">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Ana Pais
+              Ana Cláudia Pais
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
               Com 12 anos de experiência, Ana Cláudia Pais lidera um escritório
@@ -44,13 +44,13 @@ const AboutSection: React.FC = () => {
           </div>
         </div>
 
-        {/* Perfil Anderson */}
+        {/* Perfil Anderson Andrade */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="lg:order-1 flex justify-center">
             <div className={`relative w-full max-w-md h-[400px] rounded-lg shadow-xl overflow-hidden ${inView ? "animate-fade-in-from-right" : "opacity-0"}`}>
               <img
                 src="/anderson.png"
-                alt="Anderson Arquiteto"
+                alt="Anderson Andrade Arquiteto"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-background"></div>
@@ -58,7 +58,7 @@ const AboutSection: React.FC = () => {
           </div>
           <div className="lg:order-2 text-center lg:text-left">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Anderson
+              Anderson Andrade
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
               Arquiteto formado há 10 anos pela PUC Minas, Anderson é apaixonado por transformar espaços em lugares que traduzem histórias, emoções e estilos de vida. Ao longo dessa trajetória, desenvolveu projetos que unem estética, funcionalidade e identidade — sempre com o propósito de criar ambientes que acolham e inspirem.
