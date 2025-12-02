@@ -7,13 +7,11 @@ const MethodologySection: React.FC = () => {
     threshold: 0.3, // A animação será ativada quando 30% da seção estiver visível
   });
 
-  // URLs das imagens para o carrossel. Este é o método correto.
+  // TESTE: Usando imagens que já sabemos que funcionam
   const carouselImages = [
-    "/01.jpg",
-    "/02.jpg",
-    "/03.jpg",
-    "/04.jpg",
-    "/05.jpg",
+    "/bg.jpg",
+    "/sobre.png",
+    "/anderson.png",
   ];
 
   return (
