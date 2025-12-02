@@ -27,7 +27,7 @@ const MethodologySection: React.FC = () => {
           vidas e criar espaços que inspiram.
         </p>
         <div className={`relative w-full aspect-video min-h-[300px] max-h-[550px] overflow-hidden rounded-lg shadow-xl ${inView ? "animate-fade-in-from-right" : "opacity-0 translate-x-12"}`}>
-          <ImageCarousel images={carouselImages} altText="Projeto de arquitetura" />
+          <ImageCarousel images={carouselImages} altText="" />
         </div>
       </div>
     </section>

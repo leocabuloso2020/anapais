@@ -31,7 +31,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, altText }) => {
           <CarouselItem key={index} className="h-full"> {/* Adicionado h-full aqui */}
             <img
               src={imageSrc}
-              alt={`${altText} ${index + 1}`}
+              alt={altText ? `${altText} ${index + 1}` : ""}
               className="w-full h-full object-cover rounded-lg"
             />
           </CarouselItem>
