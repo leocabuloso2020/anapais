@@ -26,7 +26,7 @@ const MethodologySection: React.FC = () => {
           Acreditamos que a arquitetura vai além das paredes. É sobre transformar
           vidas e criar espaços que inspiram.
         </p>
-        <div className={`relative w-full aspect-video min-h-[300px] max-h-[550px] overflow-hidden rounded-lg shadow-xl ${inView ? "animate-fade-in-from-right" : "opacity-0 translate-x-12"}`}>
+        <div className={`relative w-full aspect-[4/3] min-h-[300px] max-h-[650px] overflow-hidden rounded-lg shadow-xl ${inView ? "animate-fade-in-from-right" : "opacity-0 translate-x-12"}`}>
           <ImageCarousel images={carouselImages} altText="Projetos de arquitetura" />
         </div>
       </div>
