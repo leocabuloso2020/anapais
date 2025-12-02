@@ -7,16 +7,18 @@ const MethodologySection: React.FC = () => {
     threshold: 0.3, // A animação será ativada quando 30% da seção estiver visível
   });
 
-  // Usando imagens que já existem no projeto para testar o carrossel.
+  // URLs das imagens para o carrossel (agora com 5 imagens)
   const carouselImages = [
-    "/sobre.png",
-    "/anderson.png",
-    "/bg.jpg",
+    "/img01.jpg",
+    "/img02.jpg",
+    "/img03.jpg",
+    "/img04.jpg",
+    "/img05.jpg",
   ];
 
   return (
     <section ref={ref} className="py-16 bg-background min-h-[calc(100vh-72px)] flex items-center">
-      <div className="container mx-auto text-center">
+      <div className="container mx-auto text-center"> {/* Removido px-4 */}
         <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
           Beleza com Propósito: Nossa Metodologia
         </h2>
@@ -25,7 +27,7 @@ const MethodologySection: React.FC = () => {
           vidas e criar espaços que inspiram.
         </p>
         <div className={`relative w-full aspect-video min-h-[300px] max-h-[550px] overflow-hidden rounded-lg shadow-xl ${inView ? "animate-fade-in-from-right" : "opacity-0 translate-x-12"}`}>
-          <ImageCarousel images={carouselImages} altText="Projeto de arquitetura" />
+          <ImageCarousel images={carouselImages} altText="Processo de trabalho" />
         </div>
       </div>
     </section>

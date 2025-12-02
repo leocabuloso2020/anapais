@@ -9,7 +9,8 @@ const MobileNav: React.FC = () => {
   const navLinks = [
     { href: "#about", label: "Sobre" },
     { href: "#services", label: "Serviços" },
-    { href: "#portfolio", label: "Portfólio" }, // Adicionado
+    // { href: "#portfolio", label: "Portfólio" }, // Removido
+    // { href: "#faq", label: "FAQ" }, // Removido
     { href: "#contact", label: "Contato" },
   ];
 
