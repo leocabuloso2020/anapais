@@ -9,11 +9,11 @@ const MethodologySection: React.FC = () => {
 
   // URLs das imagens para o carrossel (agora com 5 imagens)
   const carouselImages = [
-    "/img01.jpg",
-    "/img02.jpg",
-    "/img03.jpg",
-    "/img04.jpg",
-    "/img05.jpg",
+    "/banner1.jpg",
+    "/banner2.jpg",
+    "/banner3.jpg",
+    "/banner4.jpg",
+    "/banner5.jpg",
   ];
 
   return (
@@ -27,7 +27,7 @@ const MethodologySection: React.FC = () => {
           vidas e criar espaços que inspiram.
         </p>
         <div className={`relative w-full aspect-video min-h-[300px] max-h-[550px] overflow-hidden rounded-lg shadow-xl ${inView ? "animate-fade-in-from-right" : "opacity-0 translate-x-12"}`}>
-          <ImageCarousel images={carouselImages} altText="Processo de trabalho" />
+          <ImageCarousel images={carouselImages} altText="Projetos de arquitetura" />
         </div>
       </div>
     </section>
