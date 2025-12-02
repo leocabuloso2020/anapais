@@ -29,8 +29,11 @@ const Footer: React.FC = () => {
                 Serviços
               </a>
             </li>
-            {/* Link do Portfólio removido */}
-            {/* Link FAQ removido */}
+            <li>
+              <a href="#portfolio" className="hover:text-brand-color transition-colors">
+                Portfólio
+              </a>
+            </li>
           </ul>
         </div>
 

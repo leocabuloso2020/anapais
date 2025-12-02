@@ -4,6 +4,7 @@ import ServicesSection from "@/components/ServicesSection";
 import AboutSection from "@/components/AboutSection";
 import MethodologySection from "@/components/MethodologySection";
 import MethodologyStepsSection from "@/components/MethodologyStepsSection";
+import PortfolioSection from "@/components/PortfolioSection"; // Importando a nova seção
 import Footer from "@/components/Footer";
 import MobileNav from "@/components/MobileNav";
 import { Instagram, Facebook } from "lucide-react";
@@ -27,6 +28,11 @@ const Index: React.FC = () => {
               <li>
                 <a href="#services" className="text-muted-foreground hover:text-brand-color font-medium transition-colors">
                   Serviços
+                </a>
+              </li>
+              <li>
+                <a href="#portfolio" className="text-muted-foreground hover:text-brand-color font-medium transition-colors">
+                  Portfólio
                 </a>
               </li>
               <li>
@@ -66,22 +72,25 @@ const Index: React.FC = () => {
       </header>
 
       {/* Seções de conteúdo principal */}
-      <div> {/* Removido scroll-snap-align-start */}
+      <div>
         <HeroSection />
       </div>
-      <div id="services"> {/* Removido scroll-snap-align-start */}
+      <div id="services">
         <ServicesSection />
       </div>
-      <div id="about"> {/* Removido scroll-snap-align-start */}
+      <div id="about">
         <AboutSection />
       </div>
-      <div> {/* Removido scroll-snap-align-start */}
+      <div>
         <MethodologySection />
       </div>
-      <div> {/* Removido scroll-snap-align-start */}
+      <div id="portfolio"> {/* Adicionando a nova seção */}
+        <PortfolioSection />
+      </div>
+      <div>
         <MethodologyStepsSection />
       </div>
-      <div id="contact"> {/* Removido scroll-snap-align-start */}
+      <div id="contact">
         <Footer />
       </div>
     </div>
