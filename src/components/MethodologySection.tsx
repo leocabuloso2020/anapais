@@ -7,13 +7,13 @@ const MethodologySection: React.FC = () => {
     threshold: 0.3, // A animação será ativada quando 30% da seção estiver visível
   });
 
-  // URLs das imagens para o carrossel (agora com os nomes corretos)
+  // URLs das imagens para o carrossel (agora com as novas imagens 'banner')
   const carouselImages = [
-    "/img01.jpg",
-    "/img02.jpg",
-    "/img03.jpg",
-    "/img04.jpg",
-    "/img05.jpg",
+    "/banner1.jpg",
+    "/banner2.jpg",
+    "/banner3.jpg",
+    "/banner4.jpg",
+    "/banner5.jpg",
   ];
 
   return (
