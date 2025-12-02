@@ -9,11 +9,11 @@ const MethodologySection: React.FC = () => {
 
   // URLs das imagens para o carrossel (agora com 5 imagens)
   const carouselImages = [
-    "/img01.jpg",
-    "/img02.jpg",
-    "/img03.jpg",
-    "/img04.jpg",
-    "/img05.jpg",
+    "/01.jpg",
+    "/02.jpg",
+    "/03.jpg",
+    "/04.jpg",
+    "/05.jpg",
   ];
 
   return (
